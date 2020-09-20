@@ -7,16 +7,15 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
- 
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-   :root {
-    --animate-delay: 0.3s!important;
-    }
-   html {
-    color: #222;
-    line-height: 1.4;
+:root {
+	--animate-delay: 0.3s !important;
+}
+html {
+	color: #222;
+	line-height: 1.4;
 }
 
 /*
@@ -30,13 +29,13 @@
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
 
 /*
@@ -44,12 +43,12 @@
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
 
 /*
@@ -64,7 +63,7 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 /*
@@ -72,9 +71,9 @@ video {
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
 /*
@@ -82,7 +81,7 @@ fieldset {
  */
 
 textarea {
-    resize: vertical;
+	resize: vertical;
 }
 
 /* ==========================================================================
@@ -90,253 +89,249 @@ textarea {
    ========================================================================== */
 
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
 }
 
-
-
-
- /* ==========================================================================
+/* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-   /* Font setup */
+/* Font setup */
 
 /* Regular */
-@font-face{
-    font-family: muli-extralight;
-    src: url("../fonts/muli/static/Mulish-ExtraLight.ttf");
+@font-face {
+	font-family: muli-extralight;
+	src: url("../fonts/muli/static/Mulish-ExtraLight.ttf");
 }
 
 /* Regular */
-@font-face{
-    font-family: muli-regular;
-    src: url("../fonts/muli/static/Mulish-Regular.ttf");
+@font-face {
+	font-family: muli-regular;
+	src: url("../fonts/muli/static/Mulish-Regular.ttf");
 }
 
 /* Semi Bold */
-@font-face{
-    font-family: muli-semi-bold;
-    src: url("../fonts/muli/static/Mulish-SemiBold.ttf");
+@font-face {
+	font-family: muli-semi-bold;
+	src: url("../fonts/muli/static/Mulish-SemiBold.ttf");
 }
 
 /* Bold */
-@font-face{
-    font-family: muli-bold;
-    src: url("../fonts/muli/static/Mulish-Bold.ttf");
+@font-face {
+	font-family: muli-bold;
+	src: url("../fonts/muli/static/Mulish-Bold.ttf");
 }
 
 /* Black */
-@font-face{
-    font-family: muli-black;
-    src: url("../fonts/muli/static/Mulish-Black.ttf");
+@font-face {
+	font-family: muli-black;
+	src: url("../fonts/muli/static/Mulish-Black.ttf");
 }
 
 /*  */
-@font-face{
-    font-family: poppins-md;
-    src: url("../fonts/poppins/Poppins-Medium.ttf");
+@font-face {
+	font-family: poppins-md;
+	src: url("../fonts/poppins/Poppins-Medium.ttf");
 }
-.font-poppins-md{
-    font-family: poppins-md!important;
-}
-
-.font_muli-regular{
-    font-family: muli-regular!important;
-}
-.font_muli-s-bold{
-    font-family: muli-semi-bold!important;
-}
-.font_muli-bold{
-    font-family: muli-bold!important;
-}
-.font_muli-black{
-    font-family: muli-black!important;
-}
-.font_muli-extralight{
-    font-family: muli-extralight!important;
+.font-poppins-md {
+	font-family: poppins-md !important;
 }
 
-   /* Custom class */
-body{
-    font-family: muli-regular!important;
+.font_muli-regular {
+	font-family: muli-regular !important;
 }
-p{
-    color: #707070;
+.font_muli-s-bold {
+	font-family: muli-semi-bold !important;
 }
-.text-primary-c{
-    color: #047DF7!important;
+.font_muli-bold {
+	font-family: muli-bold !important;
 }
-.text-red{
-    color: #E43F5A!important;
+.font_muli-black {
+	font-family: muli-black !important;
 }
-.clear{
-    overflow: hidden!important;
+.font_muli-extralight {
+	font-family: muli-extralight !important;
+}
+
+/* Custom class */
+body {
+	font-family: muli-regular !important;
+}
+p {
+	color: #707070;
+}
+.text-primary-c {
+	color: #047df7 !important;
+}
+.text-red {
+	color: #e43f5a !important;
+}
+.clear {
+	overflow: hidden !important;
 }
 
 /* Customize bootstrap class */
 
 /* Home page style */
 /* nav */
-nav{
-    position: fixed;
-    width: 100%;
-    z-index: 99999;
+nav {
+	position: fixed;
+	width: 100%;
+	z-index: 99999;
 }
-nav .nav-login_btn a{
-    border-radius: 2rem!important;
-    background: #B8DBFF;
-    border : unset!important;
-    background-image: url(../img/btnHover.png);
-    background-repeat: repeat-x;
-    background-position: 6% 120%;
-    transition: background-position 0.8s ease;
+nav .nav-login_btn a {
+	border-radius: 2rem !important;
+	background: #b8dbff;
+	border: unset !important;
+	background-image: url(../img/btnHover.png);
+	background-repeat: repeat-x;
+	background-position: 6% 120%;
+	transition: background-position 0.8s ease;
 }
-nav .nav-login_btn a:hover{
-    color: #ffffff!important;
-    background-color: #B8DBFF!important;
-    background-position: 80% 92%;
+nav .nav-login_btn a:hover {
+	color: #ffffff !important;
+	background-color: #b8dbff !important;
+	background-position: 80% 92%;
 }
 /* Main */
-main{
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
+main {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
 }
 /* Aside */
-aside{
-    width: 362px;
-    /* background: #FCFCFC; */
-    overflow: hidden;
-    background: linear-gradient(to bottom,#ffffff,#FCFCFC,#ffffff);
+aside {
+	width: 362px;
+	/* background: #FCFCFC; */
+	overflow: hidden;
+	background: linear-gradient(to bottom, #ffffff, #fcfcfc, #ffffff);
 }
 
 /* Aside menu */
-aside{
-    position: relative;
+aside {
+	position: relative;
 }
-aside .aside_menu li{
-    margin-bottom: 1rem;
+aside .aside_menu li {
+	margin-bottom: 1rem;
 }
-aside .aside_menu li a{
-    font-family: muli-semi-bold;
-    color: #707070;
-    text-decoration: none!important;
-    padding-left: 1rem;
-    position: relative;
+aside .aside_menu li a {
+	font-family: muli-semi-bold;
+	color: #707070;
+	text-decoration: none !important;
+	padding-left: 1rem;
+	position: relative;
 }
-aside .aside_menu li a:hover{
-    color: #047DF7;
+aside .aside_menu li a:hover {
+	color: #047df7;
 }
-aside .aside_menu li a.active{
-    font-family: muli-bold;
-    color: #047DF7;
+aside .aside_menu li a.active {
+	font-family: muli-bold;
+	color: #047df7;
 }
-aside .aside_menu li a.active::before{
-    content: "";
-    width: 3px;
-    height: 100%;
-    position: absolute;
-    background: #047DF7;
-    left: 0;
-    top: 0;
+aside .aside_menu li a.active::before {
+	content: "";
+	width: 3px;
+	height: 100%;
+	position: absolute;
+	background: #047df7;
+	left: 0;
+	top: 0;
 }
 /* Aside bottom text */
-aside .aside-bottom_text{
-    position: absolute;
-    bottom: 3rem;
+aside .aside-bottom_text {
+	position: absolute;
+	bottom: 3rem;
 }
-aside .aside-bottom_text h2{
-    font-family: muli-bold;
-    color: #15181C;
+aside .aside-bottom_text h2 {
+	font-family: muli-bold;
+	color: #15181c;
 }
-aside .aside-bottom_text span{
-    width: 4rem;
-    height: 0.2rem;
-    background: #047DF7;
+aside .aside-bottom_text span {
+	width: 4rem;
+	height: 0.2rem;
+	background: #047df7;
 }
 
 /* Body part */
-.page-body{
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
+.page-body {
+	width: 100%;
+	overflow: hidden;
+	height: 100%;
 }
-.page-body .page-body_left{
-    width: 57%;
-    overflow: hidden;
+.page-body .page-body_left {
+	width: 57%;
+	overflow: hidden;
 }
-.page-body .page-body_right{
-    width: 43%;
-    background: #F5F4FA;
-    overflow: hidden;
+.page-body .page-body_right {
+	width: 43%;
+	background: #f5f4fa;
+	overflow: hidden;
 }
 /* Home page text */
 /* Left */
-.home-text_left h1{
-    font-size: 60px;
+.home-text_left h1 {
+	font-size: 60px;
 }
-.home-text_left h1 span{
-    color: #047DF7;
+.home-text_left h1 span {
+	color: #047df7;
 }
 /* Right */
-.home-text_right .circle-img{
-    margin: auto;
-    padding: 1rem;
-    background-image: url(../img/img_border.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    overflow: hidden;
-    border-radius: 50%;
+.home-text_right .circle-img {
+	margin: auto;
+	padding: 1rem;
+	background-image: url(../img/img_border.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	overflow: hidden;
+	border-radius: 50%;
 }
-.home-text_right .circle-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: right;
-    border-radius: 50%;
+.home-text_right .circle-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: right;
+	border-radius: 50%;
 }
-.home-text_right p{
-    text-align: center;
-    color: #047DF7;
+.home-text_right p {
+	text-align: center;
+	color: #047df7;
 }
 /* Download page */
-.download-btn{
-    border-radius: 1rem;
-    border-top: 1px solid #707070;
-    border-right: 1px solid #707070;
-    border-bottom: 1px solid #707070;
-    overflow: hidden;
+.download-btn {
+	border-radius: 1rem;
+	border-top: 1px solid #707070;
+	border-right: 1px solid #707070;
+	border-bottom: 1px solid #707070;
+	overflow: hidden;
 }
-.download-btn:focus{
-    box-shadow: 0 0 0 0.1rem #707070!important;
+.download-btn:focus {
+	box-shadow: 0 0 0 0.1rem #707070 !important;
 }
-.download-page-img{
-    margin: auto;
-    background-image: url(../img/downloadRightBg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
+.download-page-img {
+	margin: auto;
+	background-image: url(../img/downloadRightBg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
 }
-.download-page-img img{
-    width:90%;
-    object-fit: contain;
-    object-position: right;
-    /* clip-path: polygon(27.1% 17.9%, 66.08% 14px, 82.66% 21.07%, 83.66% 47.97%, 69.5% 80.04%, 35.05% 95.12%, 18.6% 79.14%, 54px 52.03%);
+.download-page-img img {
+	width: 90%;
+	object-fit: contain;
+	object-position: right;
+	/* clip-path: polygon(27.1% 17.9%, 66.08% 14px, 82.66% 21.07%, 83.66% 47.97%, 69.5% 80.04%, 35.05% 95.12%, 18.6% 79.14%, 54px 52.03%);
     -webkit-clip-path: polygon(27.1% 17.9%, 66.08% 14px, 82.66% 21.07%, 83.66% 47.97%, 69.5% 80.04%, 35.05% 95.12%, 18.6% 79.14%, 54px 52.03%);  */
 }
 
-.interface-right_img img{
-    border-top: 0.5rem solid #047DF7;
+.interface-right_img img {
+	border-top: 0.5rem solid #047df7;
 }
 
-
- /* ==========================================================================
+/* ==========================================================================
    Helper classes
    ========================================================================== */
 
@@ -344,8 +339,8 @@ aside .aside-bottom_text span{
  * Hide visually and from screen readers
  */
 
- .hidden {
-  display: none !important;
+.hidden {
+	display: none !important;
 }
 
 /*
@@ -358,15 +353,15 @@ aside .aside-bottom_text span{
 */
 
 .visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap; /* 1 */
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	white-space: nowrap; /* 1 */
 }
 
 /*
@@ -377,13 +372,13 @@ aside .aside-bottom_text span{
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-  white-space: inherit;
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+	white-space: inherit;
 }
 
 /*
@@ -391,7 +386,7 @@ aside .aside-bottom_text span{
 */
 
 .invisible {
-  visibility: hidden;
+	visibility: hidden;
 }
 
 /*
@@ -408,15 +403,14 @@ aside .aside-bottom_text span{
 
 .clearfix:before,
 .clearfix:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
+	content: " "; /* 1 */
+	display: table; /* 2 */
 }
 
 .clearfix:after {
-  clear: both;
+	clear: both;
 }
 
- 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -424,278 +418,286 @@ aside .aside-bottom_text span{
    ========================================================================== */
 
 @media only screen and (min-width: 320px) {
-    html{
-        font-size: 0.9rem;
-    }
-    nav{
-        padding:20px;
-        background: #ffffff;
-    }
+	html {
+		font-size: 0.9rem;
+	}
+	nav {
+		padding: 20px;
+		background: #ffffff;
+	}
 
-    nav .nav-brand a img{
-        width: 100px;
-    }
+	nav .nav-brand a img {
+		width: 100px;
+	}
 
-    .burger-menu{
-        display: block;
-        cursor: pointer;
-    }
+	.burger-menu {
+		display: block;
+		cursor: pointer;
+	}
 
-    main{
-        height: 100%;
-        width: 100vw;
-        position: relative;
-    }
+	main {
+		height: 100%;
+		width: 100vw;
+		position: relative;
+	}
 
-    aside{
-        height: 100vh;
-        position: fixed;
-        width: 0;
-        opacity: 0;
-        transition: opacity ease 0.5s;
-    }
+	aside {
+		height: 100vh;
+		position: fixed;
+		width: 0;
+		opacity: 0;
+		transition: opacity ease 0.5s;
+	}
 
-    aside.active{
-        width: 50%;
-        left: 0;
-        top: 0;
-        z-index: 999;
-        opacity: 1;
-        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-    }
+	aside.active {
+		width: 50%;
+		left: 0;
+		top: 0;
+		z-index: 999;
+		opacity: 1;
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+	}
 
-    aside .aside-bottom_text h2{
-        font-size: 1.5rem;
-    }
+	aside .aside-bottom_text h2 {
+		font-size: 1.5rem;
+	}
 
-    .page-body{
-        margin-top: 5rem;
-    }
+	.page-body {
+		margin-top: 5rem;
+	}
 
-    .page-body .page-body_left{
-        width: 100%;
-    }
+	.page-body .page-body_left {
+		width: 100%;
+	}
 
-    .page-body .page-body_right{
-        width: 100%;
-    }
+	.page-body .page-body_right {
+		width: 100%;
+	}
 
-    .home-text_left h1{
-        font-size: 30px;
-    }
+	.home-text_left h1 {
+		font-size: 30px;
+	}
 
-    .vision-text_right .vision-right_img img{
-        position: unset;
-        width: 50%;
-    }
+	.vision-text_right .vision-right_img img {
+		position: unset;
+		width: 50%;
+	}
 
-    .home-text_right .circle-img {
-        width: 270px;
-        height: 270px;
-    }
+	.home-text_right .circle-img {
+		width: 270px;
+		height: 270px;
+	}
 
-    .download-text_right{
-        width: 50%;
-        margin: auto;
-    }
-/* 
+	.download-text_right {
+		width: 50%;
+		margin: auto;
+	}
+	/* 
     .download-page-img{
         width: 100%;
     } */
 
-    .interface-right_img,.p-company_right_img,.contact-right_img{
-        width: 50%;
-        margin: auto;
-    }
+	.interface-right_img,
+	.p-company_right_img,
+	.contact-right_img {
+		width: 50%;
+		margin: auto;
+	}
 }
 
-@media only screen and (min-width: 578px){
-    html{
-        font-size: 1rem;
-    }
-    .home-text_left h1{
-        font-size: 40px;
-    }
+@media only screen and (min-width: 480px) {
+	aside .aside_menu li a {
+		font-size: 1.4rem;
+	}
+}
+@media only screen and (min-width: 576px) {
+	html {
+		font-size: 1rem;
+	}
+	.home-text_left h1 {
+		font-size: 40px;
+	}
+	aside .aside_menu li a {
+		font-size: 1.5rem;
+	}
 }
 
 @media only screen and (min-width: 768px) {
+	main {
+		height: 100vh;
+	}
 
-    main{
-        height: 100vh;
-    }
+	nav .nav-brand a img {
+		width: 150px;
+	}
+	aside .aside-bottom_text h2 {
+		font-size: 2rem;
+	}
 
-    nav .nav-brand a img{
-        width: 150px;
-    }
-    aside .aside-bottom_text h2{
-        font-size: 2rem;
-    }
+	.page-body .page-body_left {
+		width: 60%;
+	}
+	.page-body .page-body_right {
+		width: 40%;
+	}
 
-    .page-body .page-body_left{
-        width: 60%;
-    }
-    .page-body .page-body_right{
-        width: 40%;
-    }
+	.download-text_right {
+		width: 80%;
+		margin: auto;
+	}
 
-    .download-text_right{
-        width: 80%;
-        margin: auto;
-    }
-
-    .vision-text_right .vision-right_img img{
-        width: 75%;
-    }
-    .home-text_right .circle-img {
-        width: 300px;
-        height: 300px;
-    }
-    .interface-right_img,.p-company_right_img,.contact-right_img{
-        width: 70%;
-    }
-    
+	.vision-text_right .vision-right_img img {
+		width: 75%;
+	}
+	.home-text_right .circle-img {
+		width: 300px;
+		height: 300px;
+	}
+	.interface-right_img,
+	.p-company_right_img,
+	.contact-right_img {
+		width: 70%;
+	}
 }
 
 @media only screen and (min-width: 992px) {
+	nav {
+		background: unset !important;
+	}
 
-    nav{
-        background: unset!important;
-    }
+	nav {
+		padding: 40px 64px 20px 64px;
+	}
 
-    nav{
-        padding: 40px 64px 20px 64px;
-    }
+	nav .nav-brand a img {
+		width: 200px;
+	}
 
-    nav .nav-brand a img{
-        width: 200px;
-    }
+	aside.active {
+		width: 362px;
+		z-index: unset;
+		box-shadow: none;
+	}
+	.page-body {
+		margin-top: unset;
+	}
+	.page-body .page-body_left {
+		width: 57%;
+	}
+	.page-body .page-body_right {
+		width: 43%;
+	}
+	.burger-menu {
+		display: none !important;
+	}
+	aside {
+		position: relative;
+		width: 362px;
+		opacity: 1;
+	}
+	.home-text_left h1 {
+		font-size: 30px;
+	}
 
-    aside.active{
-        width: 362px;
-        z-index: unset;
-        box-shadow: none;
-    }
-    .page-body{
-        margin-top: unset;
-    }
-    .page-body .page-body_left{
-        width: 57%;
-    }
-    .page-body .page-body_right{
-        width: 43%;
-    }
-    .burger-menu{
-        display: none!important;
-    }
-    aside{
-        position: relative;
-        width: 362px;
-        opacity: 1;
-    }
-    .home-text_left h1{
-        font-size: 30px;
-    }
+	.vision-text_right .vision-right_img img {
+		position: absolute;
+		width: 400px;
+		bottom: 0;
+		left: -7rem;
+	}
 
-    .vision-text_right .vision-right_img img{
-        position: absolute;
-        width: 400px;
-        bottom: 0;
-        left: -7rem;
-    }
-
-    .interface-right_img,.p-company_right_img,.contact-right_img{
-        width: 80%;
-    }
+	.interface-right_img,
+	.p-company_right_img,
+	.contact-right_img {
+		width: 80%;
+	}
 }
 
-@media only screen and (min-width: 1250px){
-    .home-text_left h1{
-        font-size: 60px!important;
-    }
-} 
+@media only screen and (min-width: 1250px) {
+	.home-text_left h1 {
+		font-size: 60px !important;
+	}
+}
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+	(-webkit-min-device-pixel-ratio: 1.25),
+	(min-resolution: 1.25dppx),
+	(min-resolution: 120dpi) {
+	/* Style adjustments for high resolution devices */
 }
 
- 
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-   @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster */
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+@media print {
+	*,
+	*:before,
+	*:after {
+		background: transparent !important;
+		color: #000 !important; /* Black prints faster */
+		-webkit-box-shadow: none !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
 
-    /*
+	/*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+	a[href^="#"]:after,
+	a[href^="javascript:"]:after {
+		content: "";
+	}
 
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+	pre {
+		white-space: pre-wrap !important;
+	}
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
 
-    /*
+	/*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
 
-    thead {
-        display: table-header-group;
-    }
+	thead {
+		display: table-header-group;
+	}
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
 }
-
-
