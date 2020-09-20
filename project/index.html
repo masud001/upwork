@@ -1,239 +1,385 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+<html class="no-js" dir="rtl" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Thamer Home</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Thamer Home</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" href="icon.png" />
+		<!-- Place favicon.ico in the root directory -->
+		<link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/animate.css" />
 
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-  <link rel="stylesheet" href="./fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/animate.css">
+		<meta name="theme-color" content="#fafafa" />
+	</head>
 
-  <meta name="theme-color" content="#fafafa">
-</head>
+	<body>
+		<!--[if IE]>
+			<p class="browserupgrade">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="https://browsehappy.com/">upgrade your browser</a> to
+				improve your experience and security.
+			</p>
+		<![endif]-->
 
-<body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+		<div class="container-fluid px-0 clear">
+			<!-- Nav menu -->
+			<nav class="d-flex align-items-center">
+				<!-- Burger menu -->
+				<div
+					class="burger-menu h-100 d-flex justify-content-center align-items-center mr-4"
+				>
+					<i class="fas fa-bars fa-2x text-dark"></i>
+				</div>
+				<!-- Brand -->
+				<div class="nav-brand">
+					<a href="index.html">
+						<img src="./img/brand.png" alt="brand logo" />
+					</a>
+				</div>
+			</nav>
+			<!-- Main section -->
+			<main class="d-flex flex-column flex-lg-row">
+				<!-- Aside -->
+				<aside
+					class="d-flex flex-column justify-content-center align-items-lg-center pl-4 pl-lg-0"
+				>
+					<!-- Aside menu -->
+					<ul class="aside_menu list-unstyled">
+						<li>
+							<a
+								href="#"
+								terget="home_page"
+								class="aside-menu-item active"
+								>Home</a
+							>
+						</li>
 
-  <div class="container-fluid px-0 clear">
-        <!-- Nav menu -->
-        <nav class="d-flex align-items-center">
-            <!-- Burger menu -->
-            <div class="burger-menu h-100 d-flex justify-content-center align-items-center mr-4">
-                <i class="fas fa-bars fa-2x text-dark"></i>
-            </div>
-            <!-- Brand -->
-            <div class="nav-brand">
-                <a href="index.html">
-                    <img src="./img/brand.png" alt="brand logo">
-                </a>
-            </div>
+						<li>
+							<a
+								href="#"
+								terget="download_page"
+								class="aside-menu-item"
+								>Download</a
+							>
+						</li>
 
-            <!-- Login button -->
-            <div class="nav-login_btn ml-auto d-none d-md-block">
-                <a href="#" class="btn btn-primary px-5 text-dark">Login</a>
-            </div>
-        </nav>
-        <!-- Main section -->
-        <main class="d-flex flex-column flex-lg-row">
-            <!-- Aside -->
-            <aside class="d-flex flex-column justify-content-center align-items-lg-center pl-4 pl-lg-0">
-                <!-- Aside menu -->
-                <ul class="aside_menu list-unstyled">
-                    <li>
-                        <a href="#" terget="home_page" class="aside-menu-item active">Home</a>
-                    </li>
+						<li>
+							<a
+								href="#"
+								terget="interface_page"
+								class="aside-menu-item"
+								>Interface</a
+							>
+						</li>
 
-                    <li>
-                        <a href="#" terget="download_page" class="aside-menu-item">Download</a>
-                    </li>
+						<li>
+							<a
+								href="#"
+								terget="vision_page"
+								class="aside-menu-item"
+								>Our Vision</a
+							>
+						</li>
 
-                    <li>
-                        <a href="#" terget="interface_page" class="aside-menu-item">Interface</a>
-                    </li>
+						<li>
+							<a
+								href="#"
+								terget="company_page"
+								class="aside-menu-item"
+								>Parent Company</a
+							>
+						</li>
 
-                    <li>
-                        <a href="#" terget="vision_page" class="aside-menu-item">Our Vision</a>
-                    </li>
+						<li>
+							<a
+								href="#"
+								terget="contact_page"
+								class="aside-menu-item"
+								>Contact</a
+							>
+						</li>
+					</ul>
 
-                    <li>
-                        <a href="#" terget="company_page" class="aside-menu-item">Parent Company</a>
-                    </li>
+					<!-- Aside bottom text -->
+					<div
+						class="w-100 aside-bottom_text d-flex flex-row align-items-center justify-content-lg-end"
+					>
+						<h2 class="m-0">اللغة العربية</h2>
+						<span class="ml-1"></span>
+					</div>
+				</aside>
+				<!-- body part -->
+				<div class="page-body d-flex flex-column flex-md-row">
+					<!-- Left side -->
+					<div
+						class="order-2 order-md-1 page-body_left d-flex align-items-center"
+					>
+						<!-- Home page text left -->
+						<div
+							class="home-text_left w-100 single-page d-block home_page animate__animated animate__fadeInLeft py-5 py-md-0 px-4"
+						>
+							<h1 class="font_muli-black">
+								THAMER PROFESSIONALS NERAR BY
+								<span>.</span>
+							</h1>
+							<p>
+								Lorem ipsum dolor sit amet, consetetur
+								sadipscing elitr, sed diam nonumy eirmod
+							</p>
+						</div>
 
-                    <li>
-                        <a href="#" terget="contact_page" class="aside-menu-item">Contact</a>
-                    </li>
-                </ul>
+						<!-- Download page text -->
+						<div
+							class="download-text_left w-100 single-page d-none download_page animate__animated animate__fadeInRight py-5 py-md-0 px-4"
+						>
+							<h3 class="font_muli-black">Download Thamer</h3>
+							<p>
+								Download Thamer on your device now hire
+								professional and make things done
+							</p>
+							<!-- Download button -->
+							<div class="d-flex w-100 mt-4">
+								<!-- Apple store -->
+								<a href="#" class="download-btn btn d-flex p-0">
+									<!-- Icon -->
+									<div
+										class="d-btn-icon bg-dark text-light w-25 d-flex justify-content-center align-items-center"
+									>
+										<i class="fab fa-apple fa-lg px-5"></i>
+									</div>
+									<!-- Text -->
+									<div
+										class="d-btn-text w-100 py-1 d-flex flex-column"
+									>
+										<small class="m-0 font_muli-extralight"
+											>Download on</small
+										>
+										<small
+											class="m-0 font_muli-black text-primary-c"
+											>App Store</small
+										>
+									</div>
+								</a>
+								<!-- Play store -->
+								<a
+									href="#"
+									class="download-btn btn d-flex p-0 ml-2"
+								>
+									<!-- Icon -->
+									<div
+										class="d-btn-icon bg-dark text-light w-25 d-flex justify-content-center align-items-center"
+									>
+										<i
+											class="fab fa-google-play fa-md px-5"
+										></i>
+									</div>
+									<!-- Text -->
+									<div
+										class="d-btn-text w-100 py-1 d-flex flex-column"
+									>
+										<small class="m-0 font_muli-extralight"
+											>Download on</small
+										>
+										<small
+											class="m-0 font_muli-black text-primary-c"
+											>Google play</small
+										>
+									</div>
+								</a>
+							</div>
+						</div>
 
-                <!-- Aside bottom text -->
-                <div class="w-100 aside-bottom_text d-flex flex-row align-items-center justify-content-lg-end">
-                    <h2 class="m-0">اللغة العربية</h2>
-                    <span class="ml-1"></span>
-                </div>
-            </aside>
-            <!-- body part -->
-            <div class="page-body d-flex flex-column flex-md-row">
-                <!-- Left side -->
-                <div class="order-2 order-md-1 page-body_left d-flex align-items-center">
+						<!-- Interface page text -->
+						<div
+							class="interface-text_left w-100 single-page d-none interface_page py-5 py-md-0 px-4"
+						>
+							<div class="animate__animated animate__fadeInRight">
+								<h3 class="font_muli-black">
+									Thamer Interface
+								</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consetetur
+									sadipscing elitr, sed diam nonumy eirmod
+									tempor invidunt ut labore et dolore magna
+									aliquyam erat, sed diam voluptua. At vero
+								</p>
+							</div>
 
-                    <!-- Home page text left -->
-                    <div class="home-text_left w-100 single-page d-block home_page animate__animated animate__fadeInLeft py-5 py-md-0 px-4">
-                        <h1 class="font_muli-black">THAMER
-                            PROFESSIONALS
-                            NERAR
-                            BY
-                            <span>.</span>
-                        </h1>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p>
-                    </div>
+							<!-- App interface -->
+							<div
+								class="d-flex w-100 justify-content-around mt-5"
+							>
+								<!-- Interface 1 -->
+								<div
+									class="fl-interface d-flex flex-column align-items-center animate__animated animate__fadeInUp"
+								>
+									<img
+										src="./img/interface.png"
+										alt="interface"
+										class="w-50"
+									/>
+									<p class="text-primary-c small text-center">
+										Freelancer Interface
+									</p>
+								</div>
+								<!-- Interface 2 -->
+								<div
+									class="fl-interface d-flex flex-column align-items-center animate__animated animate__fadeInUp animate__delay-1s"
+								>
+									<img
+										src="./img/interface.png"
+										alt="interface"
+										class="w-50"
+									/>
+									<p class="text-primary-c small text-center">
+										Client Interface
+									</p>
+								</div>
+							</div>
+						</div>
 
-                    <!-- Download page text -->
-                    <div class="download-text_left w-100 single-page d-none download_page animate__animated animate__fadeInRight py-5 py-md-0 px-4">
-                        <h3 class="font_muli-black">Download Thamer</h3>
-                        <p>Download Thamer on your device now hire professional and make things done</p>
-                        <!-- Download button -->
-                        <div class="d-flex w-100 mt-4">
-                            <!-- Apple store -->
-                            <a href="#" class="download-btn btn d-flex p-0">
-                                <!-- Icon -->
-                                <div class="d-btn-icon bg-dark text-light w-25 d-flex justify-content-center align-items-center">
-                                    <i class="fab fa-apple fa-lg px-5"></i>
-                                </div>
-                                <!-- Text -->
-                                <div class="d-btn-text w-100 py-1 d-flex flex-column">
-                                    <small class="m-0 font_muli-extralight">Download on</small>
-                                    <small class="m-0 font_muli-black text-primary-c">App Store</small>
-                                </div>
-                            </a>
-                            <!-- Play store -->
-                            <a href="#" class="download-btn btn d-flex p-0 ml-2">
-                                <!-- Icon -->
-                                <div class="d-btn-icon bg-dark text-light w-25 d-flex justify-content-center align-items-center">
-                                    <i class="fab fa-google-play fa-md px-5"></i>
-                                </div>
-                                <!-- Text -->
-                                <div class="d-btn-text w-100 py-1 d-flex flex-column">
-                                    <small class="m-0 font_muli-extralight">Download on</small>
-                                    <small class="m-0 font_muli-black text-primary-c">Google play</small>
-                                </div>
-                            </a>
+						<!-- Our vision page -->
+						<div
+							class="vision-text_left w-100 single-page d-none vision_page animate__animated animate__fadeInRight py-5 py-md-0 px-4"
+						>
+							<h3 class="font_muli-black">Our Vision</h3>
+							<p class="text-dark m-0 mt-4">
+								Lorem ipsum dolor sit amet, consetetur
+								sadipscing elitr, sed diam nonumy eirmod tempor
+								invidunt ut labore et dolore magna aliquyam
+								erat, sed diam voluptua. At vero
+							</p>
+						</div>
 
-                        </div>
-                    </div>
+						<!-- parent company page -->
+						<div
+							class="p-company-text_left w-100 single-page d-none company_page animate__animated animate__fadeInRight py-5 py-md-0 px-4"
+						>
+							<h3 class="font_muli-black">Parent Company</h3>
+							<p class="text-dark">
+								KnownIdea Lorem ipsum dolor sit amet, consetetur
+								sadipscing elitr, sed diam nonumy eirmod tempor
+								invidunt ut labore et dolore magna aliquyam
+								erat, sed diam voluptua. At vero
+							</p>
+							<h4 class="font-poppins-md">
+								<span class="text-red">K</span>nown<span
+									class="text-red"
+									>I</span
+								>dea
+							</h4>
+						</div>
 
-                    <!-- Interface page text -->
-                    <div class="interface-text_left w-100 single-page d-none interface_page py-5 py-md-0 px-4">
+						<!-- Contact page -->
+						<div
+							class="contact-text_left w-100 single-page d-none contact_page animate__animated animate__fadeInRight py-5 py-md-0 px-4"
+						>
+							<h3 class="font_muli-black">Contact us</h3>
+							<p class="text-dark mt-3">
+								KnownIdea Lorem ipsum dolor sit amet, consetetur
+								sadipscing elitr, sed diam nonumy eirmod tempor
+								invidunt ut labore et dolore magna aliquyam
+								erat, sed diam voluptua. At vero
+							</p>
+						</div>
+					</div>
+					<!-- Right side -->
+					<div
+						class="order-1 order-md-2 page-body_right d-flex justify-content-center align-items-center position-relative"
+					>
+						<!-- Home page text right -->
+						<div
+							class="home-text_right d-block single-page home_page animate__animated animate__fadeInLeft py-4 py-md-0"
+						>
+							<!-- img -->
+							<div class="circle-img">
+								<img src="./img/homeRight.png" alt="image" />
+							</div>
 
-                        <div class="animate__animated animate__fadeInRight">
-                            <h3 class="font_muli-black">Thamer Interface</h3>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
-                        </div>
+							<!-- text -->
+							<p class="m-0 mt-3">Ahmed, verified Mechanical</p>
+						</div>
 
-                        <!-- App interface -->
-                        <div class="d-flex w-100 justify-content-around mt-5">
-                            <!-- Interface 1 -->
-                            <div class="fl-interface d-flex flex-column align-items-center animate__animated animate__fadeInUp">
-                                <img src="./img/interface.png" alt="interface" class="w-50">
-                                <p class="text-primary-c small text-center">Freelancer Interface</p>
-                            </div>
-                            <!-- Interface 2 -->
-                            <div class="fl-interface d-flex flex-column align-items-center animate__animated animate__fadeInUp animate__delay-1s">
-                                <img src="./img/interface.png" alt="interface" class="w-50">
-                                <p class="text-primary-c small text-center">Client Interface</p>
-                            </div>
-                        </div>
-                    </div>
+						<!-- Download page text -->
+						<div
+							class="download-text_right d-none single-page download_page animate__animated animate__fadeInLeft py-4 py-md-0"
+						>
+							<!-- img -->
+							<div
+								class="download-page-img d-flex justify-content-center"
+							>
+								<!-- <img src="./img/downloadRight.png" alt="image"> -->
+								<img
+									src="./img/downloadRight1.png"
+									alt="image"
+								/>
+							</div>
 
-                    <!-- Our vision page -->
-                    <div class="vision-text_left w-100 single-page d-none vision_page animate__animated animate__fadeInRight py-5 py-md-0 px-4">
-                        <h3 class="font_muli-black">Our Vision</h3>
-                        <p class="text-dark m-0 mt-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
-                    </div>
+							<!-- text -->
+							<p class="m-0 mt-4 text-primary-c text-center">
+								Bassem, verified Electrician
+							</p>
+						</div>
 
-                    <!-- parent company page -->
-                    <div class="p-company-text_left w-100 single-page d-none company_page animate__animated animate__fadeInRight py-5 py-md-0 px-4">
-                        <h3 class="font_muli-black">Parent Company</h3>
-                        <p class="text-dark">KnownIdea Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
-                        <h4 class="font-poppins-md"><span class="text-red">K</span>nown<span class="text-red">I</span>dea</h4>
-                    </div>
+						<!-- Interface page text -->
+						<div
+							class="interface-text_right d-none single-page interface_page animate__animated animate__fadeInUp py-4 py-md-0"
+						>
+							<div class="interface-right_img">
+								<img
+									src="./img/interfacepageRight.png"
+									alt="img"
+									class="w-100"
+								/>
+							</div>
+						</div>
 
-                    <!-- Contact page -->
-                    <div class="contact-text_left w-100 single-page d-none contact_page animate__animated animate__fadeInRight py-5 py-md-0 px-4">
-                        <h3 class="font_muli-black">Contact us</h3>
-                        <p class="text-dark mt-3">KnownIdea Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
-                    </div>
+						<!-- out vision page -->
+						<div
+							class="vision-text_right d-none single-page vision_page animate__animated animate__fadeIn py-4 py-md-0"
+						>
+							<div class="vision-right_img text-center">
+								<img src="./img/visionRight.png" alt="image" />
+							</div>
+						</div>
 
-                </div>
-                <!-- Right side -->
-                <div class="order-1 order-md-2 page-body_right d-flex justify-content-center align-items-center position-relative"> 
-                    
-                    <!-- Home page text right -->
-                    <div class="home-text_right d-block single-page home_page animate__animated animate__fadeInLeft py-4 py-md-0">
-                        <!-- img -->
-                        <div class="circle-img">
-                            <img src="./img/homeRight.png" alt="image">
-                        </div>
+						<!-- parent company page -->
+						<div
+							class="p-company-text_right w-100 d-none single-page company_page animate__animated animate__fadeInUp py-4 py-md-0"
+						>
+							<div class="p-company_right_img py-4">
+								<img
+									src="./img/com.png"
+									alt="image"
+									class="w-100"
+								/>
+							</div>
+						</div>
 
-                        <!-- text -->
-                        <p class="m-0 mt-3">Ahmed, verified Mechanical</p>
-                    </div>
+						<!-- Contact page -->
+						<div
+							class="contact-text_right d-none single-page contact_page animate__animated animate__fadeInUp py-4 py-md-0"
+						>
+							<div class="contact-right_img py-4">
+								<img
+									src="./img/contactRight.png"
+									alt="image"
+									class="w-100"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
 
-                    <!-- Download page text -->
-                    <div class="download-text_right d-none single-page download_page animate__animated animate__fadeInLeft py-4 py-md-0">
-                        <!-- img -->
-                        <div class="download-page-img d-flex justify-content-center">
-                            <!-- <img src="./img/downloadRight.png" alt="image"> -->
-                            <img src="./img/downloadRight1.png" alt="image">
-                        </div>
-
-                        <!-- text -->
-                        <p class="m-0 mt-4 text-primary-c text-center">Bassem, verified Electrician</p>
-                    </div>
-
-                    <!-- Interface page text -->
-                    <div class="interface-text_right d-none single-page interface_page animate__animated animate__fadeInUp py-4 py-md-0">
-                        <div class="interface-right_img">
-                            <img src="./img/interfacepageRight.png" alt="img" class="w-100">
-                        </div>
-                    </div>
-
-                    <!-- out vision page -->
-                    <div class="vision-text_right d-none single-page vision_page animate__animated animate__fadeIn py-4 py-md-0">
-                        <div class="vision-right_img text-center">
-                            <img src="./img/visionRight.png" alt="image">
-                        </div>
-                    </div>
-
-                    <!-- parent company page -->
-                    <div class="p-company-text_right w-100 d-none single-page company_page animate__animated animate__fadeInUp py-4 py-md-0">
-                        <div class="p-company_right_img py-4">
-                            <img src="./img/com.png" alt="image" class="w-100">
-                        </div>
-                    </div>
-
-                    <!-- Contact page -->
-                    <div class="contact-text_right d-none single-page contact_page animate__animated animate__fadeInUp py-4 py-md-0">
-                        <div class="contact-right_img py-4">
-                            <img src="./img/contactRight.png" alt="image" class="w-100">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </main>
-  </div>
-
-  <script src="js/vendor/jquery-3.3.1.min.js"></script>
-  <script src="js/vendor/bootstrap.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+		<script src="js/vendor/jquery-3.3.1.min.js"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>
