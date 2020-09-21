@@ -24,5 +24,29 @@ $(document).ready(function(){
     burger_menu.click(function() {
         aside.toggleClass("active");
     })
+
+    // Language change
+    var langBtn = $(".aside-bottom_text h2");
+    var htmlTag = $("html");
+    var rtlStyle = $("#rtlStyle");
+    var ltrStyle = $("#ltrStyle");
+    // Language state
+    var eng = false;
+    langBtn.click(function(){
+        eng = !eng;
+        if(eng){
+            $(this).text("English");
+            htmlTag.attr("dir","rtl");
+
+            ltrStyle.attr("media","none");
+            rtlStyle.attr("media"," ");
+        }else{
+            $(this).text("اللغة العربية");
+            htmlTag.attr("dir","ltr");
+
+            ltrStyle.attr("media"," ");
+            rtlStyle.attr("media","none");
+        }
+    })
     
 })
