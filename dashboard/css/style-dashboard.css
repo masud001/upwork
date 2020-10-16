@@ -250,12 +250,7 @@ body .modal-backdrop {
 .legend__buttons {
 	text-align: center;
 }
-.legend__buttons > li > a {
-	text-transform: capitalize;
-	font-size: 18px;
-	color: #4c5764 !important;
-	font-weight: 700;
-}
+
 .legend__buttons > li span.active i {
 	background-color: #9b9ea3 !important;
 }
@@ -277,17 +272,6 @@ body .modal-backdrop {
 	line-height: 25px;
 	text-align: center;
 	color: #ffffff !important;
-}
-.legend__buttons > li > a span i {
-	font-size: 12px;
-	color: #4c5764;
-}
-.legend__buttons > li > a.active {
-	background-color: #d2d2d0 !important;
-	border-radius: 30px;
-	-moz-box-shadow: inset 3px 5px 5px #9d9da1;
-	-webkit-box-shadow: inset 3px 5px 5px #9d9da1;
-	box-shadow: inset 3px 5px 5px #9d9da1;
 }
 
 /*  naigation tabs area 
@@ -497,4 +481,130 @@ body .modal-backdrop {
 
 .household__data_area .table tbody tr td {
 	font-size: 18px;
+}
+
+/* datepicker 
+================
+*/
+
+.datepicker__li_area {
+}
+.datepicker__li_area {
+}
+ul.legend__buttons li a {
+	text-transform: capitalize;
+	font-size: 15px;
+	color: #4c5764 !important;
+	font-weight: 700;
+	padding: 8px 14px;
+	display: inline-block;
+}
+ul.legend__buttons > li > div > a span i {
+	font-size: 12px;
+	color: #4c5764;
+}
+
+ul.legend__buttons li a:hover {
+	text-decoration: none;
+}
+ul.legend__buttons li.active a {
+	background-color: #d2d2d0 !important;
+	border-radius: 30px;
+	-moz-box-shadow: inset 3px 5px 5px #9d9da1;
+	-webkit-box-shadow: inset 3px 5px 5px #9d9da1;
+	box-shadow: inset 3px 5px 5px #9d9da1;
+}
+.datepicker__area_wrapper {
+	width: 600px;
+	height: 400px;
+	left: 107px !important;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #f2f2f7;
+	top: -15px !important;
+}
+.datepicker__area {
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: capitalize;
+	color: var(--ash);
+	position: relative;
+}
+.datepicker.datepicker-dropdown {
+	position: absolute !important;
+	top: 55px !important;
+}
+.datepicker__area input.form-control {
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	background-color: transparent;
+	font-size: 18px;
+	color: var(--ash);
+	font-weight: 700;
+}
+.datepicker__area input.form-control:focus {
+	outline: none !important;
+
+	box-shadow: none;
+}
+:-ms-input-placeholder {
+	font-size: 18px;
+	color: var(--ash);
+	font-weight: 700;
+}
+::placeholder {
+	font-size: 18px;
+	color: var(--ash);
+	font-weight: 700;
+}
+
+.datepicker table tr td.active,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active:hover {
+	background-color: #4e5867 !important;
+
+	background-image: unset !important;
+
+	border-color: transparent !important;
+	border-color: transparent !important;
+	border-radius: 50%;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.datepicker table tr td.today {
+	background-color: #4e5867 !important;
+	background-image: unset !important;
+	border-radius: 50%;
+	color: #ffffff;
+}
+table td.day {
+	padding: 2px 7px;
+	width: 30px !important;
+	height: 30px !important;
+	line-height: 27px;
+}
+.submit_btn {
+}
+.submit_btn button {
+	position: absolute;
+	top: 323px;
+	right: 46px;
+	width: unset;
+	padding: 6px 28px !important;
+	text-transform: capitalize;
+	font-size: 17px;
+	height: unset;
+	background-color: var(--ash);
+	color: #ffffff;
+}
+.submit_btn button:focus {
+	outline: none;
+}
+.minus_value {
+	color: #dc2d2d !important;
+}
+.text__color {
+	color: #f07878 !important;
 }

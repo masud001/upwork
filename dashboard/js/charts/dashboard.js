@@ -41,8 +41,153 @@ $(document).ready(function () {
 		setting__tools_area.removeClass("visible");
 	});
 
-	// datepicker js
+	// datepicker js one
 
-	// $("#datetimepicker01").datetimepicker();
-	$("#datetimepicker02").datetimepicker();
+	$input1 = $(".select_date1");
+	var options = {
+		format: "mm/dd/yyyy",
+		container: "#custom__pos_1",
+		todayHighlight: true,
+		autoclose: true,
+		orientation: "bottom",
+	};
+	$input1.datepicker(options);
+	$input1.data("datepicker").hide = function () {};
+	$input1.datepicker("show");
+
+	// datepicker js two
+
+	$input2 = $(".select_date2");
+	var options2 = {
+		format: "mm/dd/yyyy",
+		container: "#custom__pos_2",
+		todayHighlight: true,
+		autoclose: true,
+		orientation: "bottom",
+	};
+	$input2.datepicker(options2);
+	$input2.data("datepicker").hide = function () {};
+	$input2.datepicker("show");
+
+	// datepicker js three
+
+	$input3 = $(".select_date3");
+	var options3 = {
+		format: "mm/dd/yyyy",
+		container: "#custom__pos_3",
+		todayHighlight: true,
+		autoclose: true,
+		orientation: "bottom",
+	};
+	$input3.datepicker(options3);
+	$input3.data("datepicker").hide = function () {};
+	$input3.datepicker("show");
+
+	// datepicker js 4
+
+	$input4 = $(".select_date4");
+	var options4 = {
+		format: "mm/dd/yyyy",
+		container: "#custom__pos_4",
+		todayHighlight: true,
+		autoclose: true,
+		orientation: "bottom",
+	};
+	$input4.datepicker(options4);
+	$input4.data("datepicker").hide = function () {};
+	$input4.datepicker("show");
+
+	// datepicker js 5
+
+	$input5 = $(".select_date5");
+	var options5 = {
+		format: "mm/dd/yyyy",
+		container: "#custom__pos_5",
+		todayHighlight: true,
+		autoclose: true,
+		orientation: "bottom",
+	};
+	$input5.datepicker(options5);
+	$input5.data("datepicker").hide = function () {};
+	$input5.datepicker("show");
+
+	// datepicker js 6
+
+	$input6 = $(".select_date6");
+	var options6 = {
+		format: "mm/dd/yyyy",
+		container: "#custom__pos_6",
+		todayHighlight: true,
+		autoclose: true,
+		orientation: "bottom",
+	};
+	$input6.datepicker(options6);
+	$input6.data("datepicker").hide = function () {};
+	$input6.datepicker("show");
+
+	// datepicker js 7
+
+	$input7 = $(".select_date7");
+	var options7 = {
+		format: "mm/dd/yyyy",
+		container: "#custom__pos_7",
+		todayHighlight: true,
+		autoclose: true,
+		orientation: "bottom",
+	};
+	$input7.datepicker(options7);
+	$input7.data("datepicker").hide = function () {};
+	$input7.datepicker("show");
+
+	// datepicker js 8
+
+	$input8 = $(".select_date8");
+	var options8 = {
+		format: "mm/dd/yyyy",
+		container: "#custom__pos_8",
+		todayHighlight: true,
+		autoclose: true,
+		orientation: "bottom",
+	};
+	$input8.datepicker(options8);
+	$input8.data("datepicker").hide = function () {};
+	$input8.datepicker("show");
+
+	// datepicker js 9
+
+	$input9 = $(".select_date9");
+	var options9 = {
+		format: "mm/dd/yyyy",
+		container: "#custom__pos_9",
+		todayHighlight: true,
+		autoclose: true,
+		orientation: "bottom",
+	};
+	$input9.datepicker(options9);
+	$input9.data("datepicker").hide = function () {};
+	$input9.datepicker("show");
+
+	// datepicker js 10
+
+	$input10 = $(".select_date10");
+	var options10 = {
+		format: "mm/dd/yyyy",
+		container: "#custom__pos_10",
+		todayHighlight: true,
+		autoclose: true,
+		orientation: "bottom",
+	};
+	$input10.datepicker(options10);
+	$input10.data("datepicker").hide = function () {};
+	$input10.datepicker("show");
+
+	// $("#datetimepicker02").datetimepicker();
+
+	$("ul.legend__buttons li a").on("click", function (e) {
+		e.preventDefault();
+	});
+	$("ul.legend__buttons li").on("click", function () {
+		$(this).parent().find("li.active").removeClass("active");
+		$(this).addClass("active");
+	});
 });
