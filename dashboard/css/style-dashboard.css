@@ -18,7 +18,8 @@
 -------------
 */
 body {
-	font-family: "Neuton", serif;
+	/* font-family: "Neuton", serif; */
+	font-family: "Roboto", sans-serif;
 }
 body .modal-backdrop {
 	filter: blur(3px);
@@ -294,6 +295,7 @@ body .modal-backdrop {
 	text-transform: capitalize;
 	padding: 10px 50px;
 	font-weight: 700;
+	font-family: Neuton-reg !important;
 	display: inline-block;
 }
 .naigation__bar_wrapper > ul > li > a:hover {
@@ -325,7 +327,7 @@ body .modal-backdrop {
 .naigation__bar_wrapper .nav-item .nav-link,
 .wizards_title .h5 {
 	font-family: Neuton-reg !important;
-	font-size: 30px !important;
+	font-size: 20px !important;
 }
 .naigation__bar_wrapper .nav-item .nav-link span i {
 	font-size: 30px;
@@ -420,7 +422,7 @@ body .modal-backdrop {
 
 .single__wizards .h1 {
 	margin-bottom: 0px;
-	font-size: 25px;
+	font-size: 23px;
 }
 .single__wizards .h5 {
 	margin-bottom: 0px;
@@ -429,7 +431,7 @@ body .modal-backdrop {
 }
 .single__wizards .h6 {
 	margin-bottom: 0px;
-	font-size: 10px;
+	font-size: 15px;
 	top: -6px;
 	position: relative;
 }
@@ -458,6 +460,7 @@ body .modal-backdrop {
 	font-size: 35px;
 	font-family: Neuton-bold !important;
 	color: #4c5764 !important;
+	margin-bottom: 40px;
 }
 .balance_chart_wrapper .nav-item .nav-link,
 .balance_chart_wrapper .nav-item .nav-link span i,
@@ -471,11 +474,11 @@ body .modal-backdrop {
 }
 
 .household__data_area .table thead tr th {
+	font-family: Neuton-light !important;
 	font-size: 18px;
 	font-weight: normal;
 }
 .household__data_area .table thead tr th:first-child {
-	font-family: Neuton-light !important;
 	font-size: 27px;
 }
 
