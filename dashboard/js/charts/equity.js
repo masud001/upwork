@@ -344,7 +344,7 @@ var config = {
 
 				// draw label in arc, default is false
 				// bar chart ignores this
-				arc: true,
+				arc: false,
 
 				// position to draw label, available value is 'default', 'border' and 'outside'
 				// bar chart ignores this
