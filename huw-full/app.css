@@ -132,7 +132,7 @@ body {
 	padding: 20px 50px;
 	font-family: "MyriadPro-Bold";
 	background-color: #e1e1e3;
-	animation: bg__color;
+	/* animation: bg__color; */
 	animation-duration: 5s;
 }
 @keyframes bg__color {
