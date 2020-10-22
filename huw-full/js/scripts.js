@@ -131,9 +131,10 @@ function isElementInViewport(el) {
 }
 
 $(document).ready(function () {
+	/*
 	$(".counter__btn").each(function () {
 		var $this = $(this);
-		$({ Counter: 0 }).animate(
+		$({ Counter: 0010 }).animate(
 			{ Counter: $this.text() },
 
 			{
@@ -149,4 +150,11 @@ $(document).ready(function () {
 			}
 		);
 	});
+ */
+	var timeleft = 10;
+	var downloadTimer = setInterval(function () {
+		timeleft--;
+		document.getElementById("countdowntimer").textContent = timeleft;
+		if (timeleft <= 0) clearInterval(downloadTimer);
+	}, 1000);
 });
