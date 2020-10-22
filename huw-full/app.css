@@ -22,7 +22,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	box-sizing: border-box !important;
 }
 a,
 a:hover {
@@ -36,6 +36,15 @@ ol {
 }
 button:focus {
 	outline: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-bottom: 0 !important;
 }
 body {
 	font-family: "MyriadPro-Regular";
@@ -85,7 +94,7 @@ body {
 }
 .lets__whoops__container {
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 35px;
 }
 .container__bg {
 	color: #3a3a3a;
@@ -96,44 +105,56 @@ body {
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #3a3a3a;
-	margin-bottom: 32px;
 	font-family: "MyriadPro-Bold";
+}
+.lets__whoops__container h3 {
+	text-transform: uppercase;
+	color: #3a3a3a;
 }
 .lets__whoops__container p {
 	color: #3a3a3a;
 	font-size: 30px;
-	margin-bottom: 25px;
+	font-family: "MyriadPro-Regular";
 }
 .whoops__img_container {
 }
+
 .lets__whoops__container > img {
 	margin-top: 30px;
 	margin-bottom: 30px;
 	height: auto;
 }
+
 .mobile__img {
 	position: relative;
 	top: 0%;
 	left: 73%;
 	transform: translate(-50%);
 }
+.whoops__circle_img {
+	margin-top: 50px;
+	margin-bottom: 60px;
+}
 .tell__me_btn,
 .counter__btn {
 	border: 1px solid #8c8c8d;
-	color: #3a3a3a;
 	text-transform: uppercase;
-	font-size: 28px;
-	padding: 20px 30px;
+	font-family: "MyriadPro-Regular";
+	margin: 50px 0px;
 }
 
 .counter__btn {
-	font-size: 30px;
 	font-weight: 900;
-	padding: 20px 50px;
 	font-family: "MyriadPro-Bold";
 	background-color: #e1e1e3;
 	/* animation: bg__color; */
 	animation-duration: 5s;
+	position: relative;
+	color: #3a3a3a;
+}
+.tell__me_btn:focus,
+.counter__btn:focus {
+	outline: none;
 }
 @keyframes bg__color {
 	0% {
@@ -164,9 +185,13 @@ body {
 	background-color: #303030;
 	color: #e8e5e5;
 }
+.footer__area h3 {
+	font-size: 28px;
+	text-transform: uppercase;
+	font-family: "MyriadPro-Regular";
+}
 .three__col p {
 	color: #6d6d6d;
-	font-size: 18px;
 }
 .numbers {
 	width: 130px;
@@ -179,26 +204,77 @@ body {
 	margin: 15px auto;
 	border-radius: 50%;
 }
-@media (min-width: 576px) {
+@media (min-width: 320px) {
 	.lets__whoops__container h2 {
 		font-size: 42px;
 		line-height: 42px;
+		margin-bottom: 15px !important;
+	}
+	.lets__whoops__container h2.text-left {
+		font-size: 30px;
+	}
+	.lets__whoops__container h3 {
+		font-size: 20px;
 	}
 	.lets__whoops__container p {
 		font-size: 21px;
 	}
+	.three__col p {
+		font-size: 16px;
+	}
+	.whoops__img {
+		position: relative;
+		top: -30px;
+	}
+	.tell__me_btn {
+		position: relative;
+		z-index: 9;
+		color: #303030;
+		font-weight: 500;
+		padding: 15px 30px;
+		font-size: 20px;
+	}
+	.counter__btn {
+		font-size: 30px;
+		padding: 15px 35px;
+	}
 }
 @media (min-width: 992px) {
 	.lets__whoops__container h2 {
-		font-size: 90px;
-		line-height: 80px;
+		font-size: 70px;
+		line-height: 60px;
+		margin-bottom: 35px !important;
 	}
-
-	.lets__whoops__container p {
+	.lets__whoops__container h2.text-left {
+		font-size: 60px;
+	}
+	.lets__whoops__container h3 {
 		font-size: 30px;
 	}
-	.whoops__section_wrapper h2 {
-		font-size: 70px;
+	.lets__whoops__container p {
+		font-size: 24px;
+	}
+	.three__col p {
+		font-size: 25px;
+	}
+	.three__col_row h3 {
+		font-size: 24px;
+	}
+	.whoops__img {
+		position: relative;
+		top: -95px;
+	}
+	.tell__me_btn {
+		position: relative;
+		z-index: 9;
+		color: #303030;
+		font-weight: 500;
+		padding: 20px 43px;
+		font-size: 28px;
+	}
+	.counter__btn {
+		font-size: 30px;
+		padding: 20px 50px;
 	}
 }
 /* white-screen.html page design  END

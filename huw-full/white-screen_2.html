@@ -64,11 +64,16 @@
 					</div>
 				</div>
 				<div class="row justify-content-center">
-					<div class="col-lg-5 offset-2">
+					<div class="col-10 col-sm-8 col-lg-8 offset-lg-4">
 						<div class="whoops__img_container">
 							<img
-								class="whoops__img img-fluid"
+								class="whoops__img img-fluid d-none d-lg-block"
 								src="./images/whoops-white/whoops-mobile-img.png"
+								alt=""
+							/>
+							<img
+								class="whoops__img mt-4 img-fluid d-lg-none"
+								src="./images/whoops-white/whoops-mobile-img-without-shadow.png"
 								alt=""
 							/>
 						</div>
@@ -82,12 +87,9 @@
 		>
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-12 col-lg-12 text-center">
+					<div class="col-12 col-lg-8 text-center">
 						<div class="whoops__section_wrapper">
-							<h2>
-								STOP SEARCHING. <br />
-								WHOOP! INSTEAD
-							</h2>
+							<h2>STOP SEARCHING. WHOOP! INSTEAD</h2>
 							<p class="text-uppercase">
 								stop searching for bike technicians. <br />
 								book in with your home's local technician in
@@ -97,11 +99,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="row justify-content-center">
-					<div class="col-12 col-lg-4 text-center">
-						<h4 class="numbers">1</h4>
+				<div class="row justify-content-center mt-5 three__col_row">
+					<div class="col-12 col-lg-4 text-center mb-4 mb-md-0">
+						<h4 class="numbers mb-4">1</h4>
 						<h3 class="text-uppercase">
-							Unlock your home’s bike Whoop!
+							Unlock your <br />
+							home’s bike Whoop!
 						</h3>
 						<p>
 							an exclusive price
@@ -109,16 +112,20 @@
 							it guarantees you
 						</p>
 					</div>
-					<div class="col-12 col-lg-4 text-center">
-						<h4 class="numbers">2</h4>
+					<div class="col-12 col-lg-4 text-center mb-4 mb-md-0">
+						<h4 class="numbers mb-4">2</h4>
 						<h3 class="text-uppercase">
-							Choose your service type and local Whoop! Hub
+							Choose your service <br />
+							type and local Whoop! <br />
+							Hub
 						</h3>
 					</div>
-					<div class="col-12 col-lg-4 text-center">
-						<h4 class="numbers">3</h4>
+					<div class="col-12 col-lg-4 text-center mb-4 mb-md-0">
+						<h4 class="numbers mb-4">3</h4>
 						<h3 class="text-uppercase">
-							Choose 3 dates which work for you and you’re done!
+							Choose 3 dates which <br />
+							work for you and you’re <br />
+							done!
 						</h3>
 					</div>
 				</div>
@@ -129,7 +136,7 @@
 		<footer class="footer__area py-5">
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-12 col-md-12 text-center">
+					<div class="col-12 col-md-4 text-center">
 						<div class="footer__wrapper">
 							<h3>WHOOP! BUTTON APP</h3>
 							<div
@@ -161,5 +168,15 @@
 		<script src="js/jquery-3.5.1.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/scripts.js"></script>
+		<script src="">
+			var timeleft = 10;
+			var downloadTimer = setInterval(function () {
+				timeleft--;
+				document.getElementById(
+					"countdowntimer"
+				).textContent = timeleft;
+				if (timeleft <= 0) clearInterval(downloadTimer);
+			}, 1000);
+		</script>
 	</body>
 </html>
