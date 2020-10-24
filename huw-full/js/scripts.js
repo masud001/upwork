@@ -155,7 +155,7 @@ $(document).ready(function () {
 	var timeleft = 10;
 	var downloadTimer = setInterval(function () {
 		timeleft--;
-		document.getElementById("countdowntimer").textContent = timeleft;
+		document.getElementById("countdowntimer").textContent = "0" + timeleft;
 		if (timeleft <= 0) clearInterval(downloadTimer);
 	}, 1000);
 });
