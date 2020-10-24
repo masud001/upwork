@@ -101,19 +101,22 @@ body {
 	background-color: #f3f3f5;
 	padding: 50px 0px;
 }
-.lets__whoops__container h2 {
+.whoops__section_wrapper h2 {
 	text-transform: uppercase;
 	font-weight: 700;
 	color: #3a3a3a;
+	/* font-family: "myriad-pro", sans-serif; */
 	font-family: "MyriadPro-Bold";
+	/* font-family: "myriad-pro-condensed"; */
+	/* font-family: "myriad-pro"; */
 }
 .lets__whoops__container h3 {
 	text-transform: uppercase;
 	color: #3a3a3a;
+	font-family: "MyriadPro-Bold";
 }
-.lets__whoops__container p {
+.whoops__section_wrapper p {
 	color: #3a3a3a;
-	font-size: 30px;
 	font-family: "MyriadPro-Regular";
 }
 .whoops__img_container {
@@ -186,7 +189,6 @@ body {
 	color: #e8e5e5;
 }
 .footer__area h3 {
-	font-size: 28px;
 	text-transform: uppercase;
 	font-family: "MyriadPro-Regular";
 }
@@ -194,34 +196,27 @@ body {
 	color: #6d6d6d;
 }
 .numbers {
-	width: 130px;
-	height: 130px;
 	background-color: #303030;
 	color: #fff;
 	font-size: 30px;
-	line-height: 130px;
 	text-align: center;
 	margin: 15px auto;
 	border-radius: 50%;
 }
 @media (min-width: 320px) {
 	.lets__whoops__container h2 {
-		font-size: 42px;
-		line-height: 42px;
+		font-size: 43px;
+		line-height: 43px;
 		margin-bottom: 15px !important;
-	}
-	.lets__whoops__container h2.text-left {
-		font-size: 30px;
-	}
-	.lets__whoops__container h3 {
-		font-size: 20px;
 	}
 	.lets__whoops__container p {
 		font-size: 21px;
 	}
-	.three__col p {
-		font-size: 16px;
+
+	.lets__whoops__container h3 {
+		font-size: 20px;
 	}
+
 	.whoops__img {
 		position: relative;
 		top: -30px;
@@ -234,28 +229,33 @@ body {
 		padding: 15px 30px;
 		font-size: 20px;
 	}
+	.numbers {
+		width: 61px;
+		height: 61px;
+		line-height: 61px;
+	}
 	.counter__btn {
 		font-size: 30px;
 		padding: 15px 35px;
 	}
+	.footer__area h3 {
+		font-size: 18px;
+	}
 }
 @media (min-width: 992px) {
 	.lets__whoops__container h2 {
-		font-size: 70px;
-		line-height: 60px;
+		font-size: 92px;
+		line-height: 80px;
 		margin-bottom: 35px !important;
-	}
-	.lets__whoops__container h2.text-left {
-		font-size: 60px;
 	}
 	.lets__whoops__container h3 {
 		font-size: 30px;
 	}
 	.lets__whoops__container p {
-		font-size: 24px;
+		font-size: 30px;
 	}
 	.three__col p {
-		font-size: 25px;
+		font-size: 26px;
 	}
 	.three__col_row h3 {
 		font-size: 24px;
@@ -264,17 +264,25 @@ body {
 		position: relative;
 		top: -95px;
 	}
+	.numbers {
+		width: 130px;
+		height: 130px;
+		line-height: 130px;
+	}
 	.tell__me_btn {
 		position: relative;
 		z-index: 9;
 		color: #303030;
 		font-weight: 500;
 		padding: 20px 43px;
-		font-size: 28px;
+		font-size: 27px;
 	}
 	.counter__btn {
 		font-size: 30px;
 		padding: 20px 50px;
+	}
+	.footer__area h3 {
+		font-size: 27px;
 	}
 }
 /* white-screen.html page design  END
