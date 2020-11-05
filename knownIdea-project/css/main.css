@@ -7,6 +7,8 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -110,9 +112,13 @@ body {
 	font-family: "Visby Round CF";
 	line-height: 1.5;
 	font-size: 100%;
-	font-weight: 300;
+	font-weight: 400;
 	font-style: normal;
 }
+html[dir="rtl"] body{
+	font-family: 'Cairo', sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -134,17 +140,21 @@ a:hover {
 	position: fixed;
 	z-index: 99;
 	background-color: #ffffff;
-	height: 132px;
+	height: 112px;
 }
 .menu_btn {
 	border: 0;
 	background-color: transparent;
 	text-transform: capitalize;
-
+	font-weight: 500;
+	font-size: 30px;
 	color: #1b1b2f;
 	cursor: pointer;
 	position: relative;
 	z-index: 3;
+}
+html[dir="rtl"] .menu_btn{
+	font-weight: 600;
 }
 .menu_btn::before {
 	position: absolute;
@@ -161,8 +171,8 @@ a:hover {
 	transition: all 0.3s ease-in-out;
 }
 .menu_btn:hover::before {
-	width: 80px;
-	height: 80px;
+	width: 90px;
+	height: 90px;
 	transition: all 0.5s ease-in;
 }
 
@@ -180,7 +190,7 @@ html[dir="rtl"] .side__menu_section span i {
 }
 .side__menu_section {
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.9);
+	background-color:#35363A;
 	z-index: 100;
 	padding: 30px;
 	position: fixed;
@@ -222,9 +232,6 @@ html[dir="rtl"] .side__menu_section.active {
 	height: 100%;
 }
 
-.menu__wrapper ul a:hover {
-	color: #e43f5a;
-}
 .menu__wrapper ul a {
 	display: unset;
 	color: #ffffff;
@@ -233,7 +240,8 @@ html[dir="rtl"] .side__menu_section.active {
 	padding-right: 10px;
 	margin: 10px 0px;
 	transition: 0.3s all;
-	font-size: 30px;
+	font-size: 48px;
+	font-weight: 600;
 }
 html[dir="rtl"] .menu__wrapper ul li a {
 	/* text-align: left; */
@@ -267,24 +275,29 @@ html[dir="rtl"] .menu__wrapper ul li a {
 
 .hero_heading {
 	text-transform: initial;
+	color: #F72556;
+	font-weight: 900;
 }
-.hero_heading {
-	color: #e43f5a;
-	font-weight: 300;
+html[dir="rtl"] .hero_heading{
+	font-weight: 700;
 }
 .hero_heading span {
 	color: #482572;
 }
 .feather_image_container {
-	width: 100px;
-	height: 100px;
-	border: 1px solid #191b20;
-	line-height: 100px;
-	margin: 25px auto;
-	border-radius: 50%;
-	position: relative;
-	transition: all 0.3s ease-in-out;
-	cursor: pointer;
+	width: 80px;
+    height: 80px;
+    border: 1px solid rgb(25, 27, 32);
+    line-height: 79px;
+    margin: 25px auto;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+}
+.feather__image{
+	width: 36px;
+    height: 36px;
 }
 .feather_image_container:hover .feather__image {
 	transform: scale(1.3);
@@ -293,23 +306,26 @@ html[dir="rtl"] .menu__wrapper ul li a {
 
 .hero__sub_heading {
 	color: #191b20 !important;
-	font-size: 18px;
+	font-size: 25px;
 	text-transform: inherit;
 	display: inline-block;
 	position: relative;
 	z-index: 4;
 	transition: width 0.5s ease-in-out;
+	font-weight: 500;
+}
+html[dir="rtl"] .hero__sub_heading{
+	font-weight: 400;
 }
 .hero__sub_heading::before {
 	content: "";
 	position: absolute;
-	top: 16px;
+	top: 24px;
 	left: -8px;
 	width: 0%;
 	height: 52%;
 	background-color: #fccd2f;
-	border-top-right-radius: 30px;
-	border-bottom-right-radius: 30px;
+	border-radius: 30px;
 	z-index: -3;
 	transition: all 0.5s ease-in-out;
 }
@@ -329,10 +345,13 @@ html[dir="rtl"] .menu__wrapper ul li a {
 	position: relative;
 }
 .section__title h2 {
-	color: #162447;
+	color: #482572;
 	display: inline-block;
 	text-transform: capitalize;
-	font-weight: 300;
+	font-weight: 500;
+}
+html[dir="rtl"] .section__title h2{
+	font-weight: 400;
 }
 .section__logo {
 	width: 200px;
@@ -447,23 +466,30 @@ html[dir="rtl"] .title__line {
 	text-transform: capitalize;
 	margin: 15px 0px;
 	color: #191b20;
+	font-weight: 600;
 }
 
 .company__wizard_text p {
 	color: #757679;
+	font-weight: 400;
+	line-height: 35px;
 }
 .company__wizard_button {
 	margin-top: 50px;
 	margin-bottom: 10px;
 }
 .company__wizard_button a {
-	background-color: #e43f5a;
+	background-color: #F72556;
 	color: #ffffff;
 	text-transform: capitalize;
-	font-size: 1.5rem;
+	font-weight: 500;
+	font-size: 22px;
 	padding: 15px 30px;
 	display: inline-block;
 	box-shadow: 0px 1px 7px 4px #dfdfdf;
+}
+html[dir="rtl"] .company__wizard_button a{
+	font-weight: 600;
 }
 /* work with us section 
 ----------------------------
@@ -557,6 +583,7 @@ html[dir="rtl"] .single_projects__informations::before {
 }
 .single_projects__informations h2 {
 	color: #ffffff;
+	font-weight: 800;
 }
 .single_projects__informations > span {
 	margin-right: 15px;
@@ -568,19 +595,21 @@ html[dir="rtl"] .single_projects__informations::before {
 .single_projects__informations span p {
 	color: #ffffff;
 	text-transform: capitalize;
+	font-weight: 400;
 }
 
 .project_show_ticker {
-	background-color: #f72556;
+	background-color: #F72556;
 	color: #ffffff;
 	text-transform: capitalize;
-	font-size: 1.5rem;
 	padding: 15px 30px;
 	display: inline-block;
 	position: relative;
-	transform: rotate(90deg);
+	transform: rotate(-90deg);
 	left: -65px;
 	top: -66px;
+	font-weight: 500;
+	font-size: 24px;
 }
 .css__shapes {
 	position: relative;
@@ -593,12 +622,12 @@ html[dir="rtl"] .single_projects__informations::before {
 	border-right: 24px solid transparent;
 	position: absolute;
 	top: -124px;
-	left: 58px;
+	left: 60px;
 }
 html[dir="rtl"] .triangle__bottomleft {
 	border-right: unset;
 	border-left: 24px solid transparent;
-	left: 99px;
+	left: 101px;
 }
 html[dir="rtl"] .project_show_ticker {
 	background-color: #e43f5a;
@@ -621,6 +650,7 @@ html[dir="rtl"] .project_show_ticker {
 	margin-top: 100px;
 	margin-bottom: 100px;
 	box-shadow: 0px 15px 9px -11px #f8f8f8;
+	overflow: hidden;
 }
 
 #team .section__bg_images::before {
@@ -640,7 +670,7 @@ html[dir="rtl"] #team .section__bg_images::before {
 	left: -8%;
 }
 #team .title__line_color {
-	background-color: #fccd2f;
+	background-color: #482572;
 }
 .single_team_meber__wrapper {
 	box-shadow: 0px 0px 7px 2px #dfdfdf;
@@ -659,33 +689,42 @@ html[dir="rtl"] #team .section__bg_images::before {
 	height: auto;
 	overflow: hidden;
 	border-radius: 50%;
+	border: 1px solid #482572;
 }
 
 .team_member__name {
 	color: #191b20;
 	margin-bottom: 6px;
+	font-weight: 600;
 }
 .team_member__designation {
-	color: #191b20;
+	color: #47484C;
 	font-size: 20px;
 	margin-bottom: 5px;
+	font-weight: 400;
+	margin: 1rem 0;
 }
 .team_member__experience {
-	color: #194cd8;
-	margin-bottom: 5px;
+	color: #194CD8;
+	margin-bottom: 10px;
+	font-weight: 400;
 }
 .team_member__project_complenation {
-	color: #191b20;
+	color: #191B20;
+	font-weight: 200;
 }
 .team_member__biography_title {
 	color: #191b20;
-	font-size: 30px;
+	font-size: 28px;
 	text-transform: capitalize;
 	margin-bottom: 7px;
+	font-weight: 500;
 }
 .team_member__biography_content {
+	margin-top: 1rem;
 	color: #757679;
 	margin-bottom: 5px;
+	font-weight: 400;
 }
 
 /* footer section desing start 
@@ -701,9 +740,9 @@ html[dir="rtl"] #team .section__bg_images::before {
 	vertical-align: middle;
 }
 .footer_content_title {
-	color: #191b20;
-
-	margin-bottom: 13px;
+	color: #191B20;
+	font-weight: 500;
+	margin-bottom: 2rem;
 }
 .email__title {
 	color: #191b20;
@@ -712,6 +751,7 @@ html[dir="rtl"] #team .section__bg_images::before {
 }
 .email__account a {
 	color: #191b20;
+	font-weight: 400;
 }
 
 .bg_img_1 {
@@ -742,7 +782,7 @@ html[dir="rtl"] .bg_img_1 {
 .bg_img_4 {
 	position: absolute;
 	top: 83%;
-	left: 41%;
+	left: 38.8%;
 	transform: translate(15%, 50%);
 }
 html[dir="rtl"] .bg_img_4 {
@@ -903,6 +943,12 @@ html[dir="rtl"] .bg_img_17 {
 .footer__section .container {
 	position: relative;
 }
+
+
+.work_with_us_content__wrapper .section__title h2{
+	font-size: 42px;
+	color: #090A0B;
+}
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -971,7 +1017,7 @@ html[dir="rtl"] .bg_img_17 {
 		font-size: 14px;
 	}
 
-	.work_with_us_content__wrapper .section__title h2 {
+	.work_with_us_content__wrapper{
 		font-size: 1.1rem;
 	}
 	.company_wizard_title h1 {
@@ -1021,13 +1067,13 @@ html[dir="rtl"] .bg_img_17 {
 		line-height: 145px;
 	}
 	.team_member__name {
-		font-size: 36px;
+		font-size: 24px;
 	}
 	.team_member__designation {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	.team_member__experience {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	.team_member__project_complenation {
 		font-size: 16px;
@@ -1036,7 +1082,7 @@ html[dir="rtl"] .bg_img_17 {
 		font-size: 100px;
 	}
 	.footer_content_title {
-		font-size: 55px;
+		font-size: 48px;
 	}
 	.email__title {
 		font-size: 35px;
@@ -1059,10 +1105,6 @@ html[dir="rtl"] .bg_img_17 {
 	html[dir="rtl"] .title__line {
 		width: 50px;
 	}
-	.section__title h2 {
-		color: #162447;
-		font-size: 40px;
-	}
 	#work_with_us .section__bg_images {
 		bottom: 4px;
 		display: block;
@@ -1071,7 +1113,7 @@ html[dir="rtl"] .bg_img_17 {
 	.company_name_title {
 		right: -13%;
 	}
-	.work_with_us_content__wrapper .section__title h2 {
+	.work_with_us_content__wrapper{
 		font-size: 2rem;
 	}
 
@@ -1104,8 +1146,7 @@ html[dir="rtl"] .bg_img_17 {
 		width: 150px;
 	}
 	.section__title h2 {
-		color: #162447;
-		font-size: 40px;
+		font-size: 32px;
 	}
 	#work_with_us .section__bg_images {
 		bottom: -20px;
@@ -1124,11 +1165,11 @@ html[dir="rtl"] .bg_img_17 {
 		padding-left: 160px;
 		padding-right: unset;
 	}
-	.work_with_us_content__wrapper .section__title h2 {
+	.work_with_us_content__wrapper {
 		font-size: 2.8125rem;
 	}
 	.email__account a {
-		font-size: 36px;
+		font-size: 28px;
 	}
 }
 
@@ -1148,10 +1189,10 @@ html[dir="rtl"] .bg_img_17 {
 		padding-right: unset;
 	}
 	.company_wizard_title h1 {
-		font-size: 2.1875rem;
+		font-size: 24px;
 	}
 	.company__wizard_text p {
-		font-size: 1.5rem;
+		font-size: 22px;
 	}
 	#work_with_us .section__bg_images {
 		bottom: -46px;
@@ -1161,7 +1202,7 @@ html[dir="rtl"] .bg_img_17 {
 
 @media only screen and (min-width: 1200px) {
 	.hero_heading {
-		font-size: 5rem;
+		font-size: 80px;
 	}
 	#work_with_us .section__bg_images {
 		bottom: -73px;
@@ -1177,6 +1218,10 @@ html[dir="rtl"] .bg_img_17 {
 		padding-left: 250px;
 		padding-right: unset;
 	}
+
+
+
+
 }
 
 @media print,
