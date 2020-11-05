@@ -5,15 +5,12 @@
 		<title>Thamer Home</title>
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#fafafa" />
 
 		<link rel="apple-touch-icon" href="icon.png" />
 		<!-- Place favicon.ico in the root directory -->
 		<link rel="stylesheet" href="./fontawesome/css/all.min.css" />
-		<!-- google fonts CDN  -->
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-			rel="stylesheet"
-		/>
+		<link rel="stylesheet" href="./fonts/visbyround/fonts-style.css" />
 		<link
 			rel="stylesheet"
 			id="ltrStyle"
@@ -26,10 +23,10 @@
 			media="none"
 			href="./css/bootstrap.rtl.min.css"
 		/>
+		<link rel="stylesheet" href="./css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="./css/owl.theme.default.css" />
 		<link rel="stylesheet" href="./css/main.css" />
 		<link rel="stylesheet" href="./css/animate.css" />
-
-		<meta name="theme-color" content="#fafafa" />
 	</head>
 
 	<body>
@@ -43,40 +40,54 @@
 
 		<!-- header section START  -->
 		<header id="header" class="header__section w-100">
-			<nav
-				class="navbar d-flex justify-content-between align-items-center py-0"
-			>
-				<div class="col-6 col-lg-3 text-left">
-					<a class="navbar-brand logo__link" href="#"
-						><img
-							src="./img/logo/Logo_2x.png"
-							class="img-fluid logo__img"
-							alt="logo"
-					/></a>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<nav
+							class="navbar d-flex justify-content-between align-items-center py-0"
+						>
+							<div class="col-6 col-lg-3 text-left">
+								<a class="navbar-brand logo__link" href="#"
+									><img
+										src="./img/logo/Logo_2x.png"
+										class="img-fluid logo__img"
+										alt="logo"
+								/></a>
+							</div>
+							<div class="col text-right">
+								<button class="menu_btn">Menu</button>
+							</div>
+						</nav>
+					</div>
 				</div>
-				<div class="col text-right">
-					<button class="menu_btn">Menu</button>
-				</div>
-			</nav>
+			</div>
 		</header>
 
-		<div class="side__menu_section">
-			<ul>
-				<li><a href="#"> items number</a></li>
-				<li><a href="#"> items number</a></li>
-				<li><a href="#"> items number</a></li>
-				<li><a href="#"> items number</a></li>
-				<li><a href="#"> items number</a></li>
-				<li><a href="#"> items number</a></li>
-				<li><a href="#"> items number</a></li>
-				<li><a href="#"> items number</a></li>
-			</ul>
+		<div class="side__menu_section h-100">
+			<div class="container h-100">
+				<div class="row h-100">
+					<div class="col-12 h-100">
+						<div class="menu__wrapper h-100">
+							<span class="close__btn"
+								><i class="fas fa-times"></i
+							></span>
+							<ul>
+								<a href="#"> build your own start up</a>
+								<a href="#"> who we are </a>
+								<a href="#"> past projects</a>
+								<a href="#"> cantact</a>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<!-- header section END  -->
 
 		<!-- hero slider section START  -->
-		<section id="hero" class="hero__section section__bg_img">
-			<div class="container">
+
+		<div class="container">
+			<section id="hero" class="hero__section section__bg_img">
 				<div class="row justify-content-center pt-5 pb-3">
 					<!-- randon images  -->
 					<span class="bg_img_1"
@@ -92,10 +103,40 @@
 						><img src="./img/Ellipse 80.png" alt=""
 					/></span>
 
-					<div class="col-12 col-lg-10 offset-lg-2">
-						<div class="hero__contents_wrapper">
-							<h1 class="hero_heading">
-								<span>Where </span> <br />
+					<div class="col-12 col-lg-8 pl-lg-5">
+						<div
+							class="hero__contents_wrapper hero__slider owl-carousel owl-theme"
+						>
+							<h1 class="hero_heading item">
+								<span> Where </span> <br />
+								ideas
+								<span>start </span> <br />
+								revolutionize
+								<span>life_</span>
+							</h1>
+							<h1 class="hero_heading item">
+								<span> Where </span> <br />
+								ideas
+								<span>start </span> <br />
+								revolutionize
+								<span>life_</span>
+							</h1>
+							<h1 class="hero_heading item">
+								<span> Where </span> <br />
+								ideas
+								<span>start </span> <br />
+								revolutionize
+								<span>life_</span>
+							</h1>
+							<h1 class="hero_heading item">
+								<span> Where </span> <br />
+								ideas
+								<span>start </span> <br />
+								revolutionize
+								<span>life_</span>
+							</h1>
+							<h1 class="hero_heading item">
+								<span> Where </span> <br />
 								ideas
 								<span>start </span> <br />
 								revolutionize
@@ -113,16 +154,17 @@
 								alt="feather image"
 							/>
 						</div>
-						<h2 class="hero__sub_heading">Create your start up</h2>
+						<a href="#" class="hero__sub_heading"
+							>Create your start up</a
+						>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 		<!-- hero slider section START  -->
-
 		<!-- companies details section START -->
 		<section id="company" class="company__section">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="company_title section__title mb-5">
@@ -130,16 +172,19 @@
 								<span
 									class="title__line title__line_color"
 								></span>
-								<span class="text_color">k</span>nown<span
-									class="text_color"
-									>i</span
-								>dea companies
+								<span class="section__logo"
+									><img
+										src="./img/logo/Logo_2x.png"
+										class="img-fluid"
+										alt=""
+								/></span>
+								companies
 							</h2>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
 					<div class="col-12 col-md-4 col-lg-4 pb-4">
 						<span class="bg_img_5"
@@ -147,6 +192,18 @@
 						/></span>
 						<div class="company__single_wizard section__color_one">
 							<div class="company__wizard_logo">
+								<!-- background overlay  -->
+								<div class="company__wizard_overlay">
+									<img
+										src="./img/background-img/hover_overlay_bg.png"
+										alt=""
+										class="img-fluid"
+									/>
+								</div>
+								<!-- overlay button  -->
+								<div class="company__overlay__btn">
+									<a href="#">visit website</a>
+								</div>
 								<img
 									class="img-fluid"
 									src="./img/Mask_Group_6-removebg-preview.png"
@@ -173,6 +230,18 @@
 					<div class="col-12 col-md-4 col-lg-4 pb-4">
 						<div class="company__single_wizard section__color_two">
 							<div class="company__wizard_logo">
+								<!-- background overlay  -->
+								<div class="company__wizard_overlay">
+									<img
+										src="./img/background-img/hover_overlay_bg.png"
+										alt=""
+										class="img-fluid"
+									/>
+								</div>
+								<!-- overlay button  -->
+								<div class="company__overlay__btn">
+									<a href="#">visit website</a>
+								</div>
 								<img
 									class="img-fluid"
 									src="./img/Mask_Group_2-removebg-preview.png"
@@ -201,6 +270,18 @@
 							class="company__single_wizard section__color_three"
 						>
 							<div class="company__wizard_logo">
+								<!-- background overlay  -->
+								<div class="company__wizard_overlay">
+									<img
+										src="./img/background-img/hover_overlay_bg.png"
+										alt=""
+										class="img-fluid"
+									/>
+								</div>
+								<!-- overlay button  -->
+								<div class="company__overlay__btn">
+									<a href="#">visit website</a>
+								</div>
 								<img
 									class="img-fluid"
 									src="./img/Mask_Group_5-removebg-preview.png"
@@ -232,22 +313,29 @@
 			</div>
 		</section>
 		<!-- companies details section END -->
-
 		<!-- .work with us section START  -->
 		<section
 			id="work_with_us"
 			class="work_with_us__section section__bg_img"
 		>
-			<div class="container">
+			<div class="container position-relative">
 				<span class="company_name_title">
-					<h2>
-						<span class="text_color">k</span>nown<span
-							class="text_color"
-							>i</span
-						>dea
-					</h2>
+					<span class="section__logo_vertical"
+						><img
+							src="./img/logo/Logo_2x.png"
+							class="img-fluid"
+							alt=""
+					/></span>
 				</span>
 				<div class="row">
+					<div class="section__bg_images">
+						<img
+							src="./img/work_sectionbg_.png"
+							class="img-fluid"
+							alt=""
+						/>
+					</div>
+
 					<span class="bg_img_7"
 						><img src="./img/Rectangle 20.png" alt=""
 					/></span>
@@ -282,23 +370,24 @@
 			</div>
 		</section>
 		<!-- .work with us section END -->
-
 		<!-- project showcase sections START -->
+		<section class="project__show_ticker_area">
+			<div class="container">
+				<div class="row position-absolute">
+					<div class="col-12">
+						<div class="css__shapes">
+							<span class="triangle__bottomleft"></span>
+							<span class="project_show_ticker">KnownIdea</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section
 			id="project_shows"
-			class="project_showcase__section section_bg_color"
+			class="project_showcase__section section_bg_color section__bg_img section__hover_bg_img"
 		>
 			<div class="container">
-				<span class="bg_img_9"
-					><img src="./img/Rectangle 99.png" alt=""
-				/></span>
-				<span class="bg_img_10"
-					><img src="./img/Polygon 5.png" alt=""
-				/></span>
-				<span class="bg_img_11"
-					><img src="./img/Rectangle 103.png" alt=""
-				/></span>
-				<span class="project_show_ticker">KnownIdea</span>
 				<div class="row">
 					<div class="col-12 col-lg-10 offset-lg-2">
 						<div class="row nogutters">
@@ -358,10 +447,9 @@
 			</div>
 		</section>
 		<!-- project showcase sections END -->
-
 		<!-- team member section START  -->
 		<section id="team" class="team__section section_bg_color">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="company_title section__title mb-5">
@@ -369,10 +457,13 @@
 								<span
 									class="title__line title__line_color"
 								></span>
-								<span class="text_color">k</span>nown<span
-									class="text_color"
-									>i</span
-								>dea companies
+								<span class="section__logo"
+									><img
+										src="./img/logo/Logo_2x.png"
+										class="img-fluid"
+										alt=""
+								/></span>
+								companies
 							</h2>
 						</div>
 					</div>
@@ -380,7 +471,8 @@
 			</div>
 
 			<div class="container">
-				<div class="row">
+				<div class="row position-relative">
+					<div class="section__bg_images d-none d-lg-block"></div>
 					<span class="bg_img_12"
 						><img src="./img/Rectangle 101.png" alt=""
 					/></span>
@@ -476,7 +568,6 @@
 			</div>
 		</section>
 		<!-- team member section END -->
-
 		<!-- footer section START  -->
 		<footer id="footer" class="footer__section">
 			<div class="container">
@@ -485,13 +576,13 @@
 				/></span>
 				<div class="row">
 					<div class="col-lg-4">
-						<div class="company_title section__title">
-							<h2>
-								<span class="text_color">k</span>nown<span
-									class="text_color"
-									>i</span
-								>dea
-							</h2>
+						<div class="company_title section__title w-75">
+							<span
+								><img
+									src="./img/logo/Logo_2x.png"
+									class="img-fluid"
+									alt=""
+							/></span>
 						</div>
 					</div>
 					<div class="col-lg-8">
@@ -523,6 +614,7 @@
 
 		<script src="js/vendor/jquery-3.3.1.min.js"></script>
 		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/main.js"></script>
 	</body>
