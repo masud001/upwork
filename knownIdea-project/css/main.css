@@ -7,8 +7,6 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
-
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -115,8 +113,8 @@ body {
 	font-weight: 400;
 	font-style: normal;
 }
-html[dir="rtl"] body{
-	font-family: 'Cairo', sans-serif;
+html[dir="rtl"] body {
+	font-family: "Cairo", sans-serif;
 }
 
 h1,
@@ -147,14 +145,14 @@ a:hover {
 	background-color: transparent;
 	text-transform: capitalize;
 	font-weight: 500;
-	font-size: 30px;
 	color: #1b1b2f;
 	cursor: pointer;
 	position: relative;
 	z-index: 3;
 }
-html[dir="rtl"] .menu_btn{
+html[dir="rtl"] .menu_btn {
 	font-weight: 600;
+	font-size: 21px;
 }
 .menu_btn::before {
 	position: absolute;
@@ -190,7 +188,7 @@ html[dir="rtl"] .side__menu_section span i {
 }
 .side__menu_section {
 	height: 100%;
-	background-color:#35363A;
+	background-color: #35363a;
 	z-index: 100;
 	padding: 30px;
 	position: fixed;
@@ -240,7 +238,6 @@ html[dir="rtl"] .side__menu_section.active {
 	padding-right: 10px;
 	margin: 10px 0px;
 	transition: 0.3s all;
-	font-size: 48px;
 	font-weight: 600;
 }
 html[dir="rtl"] .menu__wrapper ul li a {
@@ -275,10 +272,10 @@ html[dir="rtl"] .menu__wrapper ul li a {
 
 .hero_heading {
 	text-transform: initial;
-	color: #F72556;
+	color: #f72556;
 	font-weight: 900;
 }
-html[dir="rtl"] .hero_heading{
+html[dir="rtl"] .hero_heading {
 	font-weight: 700;
 }
 .hero_heading span {
@@ -286,18 +283,18 @@ html[dir="rtl"] .hero_heading{
 }
 .feather_image_container {
 	width: 80px;
-    height: 80px;
-    border: 1px solid rgb(25, 27, 32);
-    line-height: 79px;
-    margin: 25px auto;
-    border-radius: 50%;
-    position: relative;
-    transition: all 0.3s ease-in-out 0s;
-    cursor: pointer;
+	height: 80px;
+	border: 1px solid rgb(25, 27, 32);
+	line-height: 79px;
+	margin: 25px auto;
+	border-radius: 50%;
+	position: relative;
+	transition: all 0.3s ease-in-out 0s;
+	cursor: pointer;
 }
-.feather__image{
+.feather__image {
 	width: 36px;
-    height: 36px;
+	height: 36px;
 }
 .feather_image_container:hover .feather__image {
 	transform: scale(1.3);
@@ -314,7 +311,7 @@ html[dir="rtl"] .hero_heading{
 	transition: width 0.5s ease-in-out;
 	font-weight: 500;
 }
-html[dir="rtl"] .hero__sub_heading{
+html[dir="rtl"] .hero__sub_heading {
 	font-weight: 400;
 }
 .hero__sub_heading::before {
@@ -350,7 +347,7 @@ html[dir="rtl"] .hero__sub_heading{
 	text-transform: capitalize;
 	font-weight: 500;
 }
-html[dir="rtl"] .section__title h2{
+html[dir="rtl"] .section__title h2 {
 	font-weight: 400;
 }
 .section__logo {
@@ -479,7 +476,7 @@ html[dir="rtl"] .title__line {
 	margin-bottom: 10px;
 }
 .company__wizard_button a {
-	background-color: #F72556;
+	background-color: #f72556;
 	color: #ffffff;
 	text-transform: capitalize;
 	font-weight: 500;
@@ -488,7 +485,7 @@ html[dir="rtl"] .title__line {
 	display: inline-block;
 	box-shadow: 0px 1px 7px 4px #dfdfdf;
 }
-html[dir="rtl"] .company__wizard_button a{
+html[dir="rtl"] .company__wizard_button a {
 	font-weight: 600;
 }
 /* work with us section 
@@ -599,7 +596,7 @@ html[dir="rtl"] .single_projects__informations::before {
 }
 
 .project_show_ticker {
-	background-color: #F72556;
+	background-color: #f72556;
 	color: #ffffff;
 	text-transform: capitalize;
 	padding: 15px 30px;
@@ -698,19 +695,19 @@ html[dir="rtl"] #team .section__bg_images::before {
 	font-weight: 600;
 }
 .team_member__designation {
-	color: #47484C;
+	color: #47484c;
 	font-size: 20px;
 	margin-bottom: 5px;
 	font-weight: 400;
 	margin: 1rem 0;
 }
 .team_member__experience {
-	color: #194CD8;
+	color: #194cd8;
 	margin-bottom: 10px;
 	font-weight: 400;
 }
 .team_member__project_complenation {
-	color: #191B20;
+	color: #191b20;
 	font-weight: 200;
 }
 .team_member__biography_title {
@@ -740,7 +737,7 @@ html[dir="rtl"] #team .section__bg_images::before {
 	vertical-align: middle;
 }
 .footer_content_title {
-	color: #191B20;
+	color: #191b20;
 	font-weight: 500;
 	margin-bottom: 2rem;
 }
@@ -944,10 +941,9 @@ html[dir="rtl"] .bg_img_17 {
 	position: relative;
 }
 
-
-.work_with_us_content__wrapper .section__title h2{
+.work_with_us_content__wrapper .section__title h2 {
 	font-size: 42px;
-	color: #090A0B;
+	color: #090a0b;
 }
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -967,6 +963,12 @@ html[dir="rtl"] .bg_img_17 {
 	}
 	html[dir="rtl"] .title__line {
 		width: 20px;
+	}
+	.menu_btn {
+		font-size: 17px;
+	}
+	.menu__wrapper ul a {
+		font-size: 18px;
 	}
 	.company_name_title {
 		right: -18%;
@@ -1017,7 +1019,7 @@ html[dir="rtl"] .bg_img_17 {
 		font-size: 14px;
 	}
 
-	.work_with_us_content__wrapper{
+	.work_with_us_content__wrapper {
 		font-size: 1.1rem;
 	}
 	.company_wizard_title h1 {
@@ -1051,6 +1053,9 @@ html[dir="rtl"] .bg_img_17 {
 	html[dir="rtl"] .work_with_us_content__wrapper .company__wizard_text {
 		padding-left: 49px;
 		padding-right: unset;
+	}
+	.menu__wrapper ul a {
+		font-size: 31px;
 	}
 	.company_name_title {
 		right: -15%;
@@ -1110,10 +1115,13 @@ html[dir="rtl"] .bg_img_17 {
 		display: block;
 		width: 51%;
 	}
+	.menu__wrapper ul a {
+		font-size: 35px;
+	}
 	.company_name_title {
 		right: -13%;
 	}
-	.work_with_us_content__wrapper{
+	.work_with_us_content__wrapper {
 		font-size: 2rem;
 	}
 
@@ -1218,10 +1226,12 @@ html[dir="rtl"] .bg_img_17 {
 		padding-left: 250px;
 		padding-right: unset;
 	}
-
-
-
-
+	.menu__wrapper ul a {
+		font-size: 48px;
+	}
+	.menu_btn {
+		font-size: 25px;
+	}
 }
 
 @media print,
