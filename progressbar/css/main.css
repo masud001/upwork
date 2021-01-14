@@ -133,10 +133,14 @@ ul.steps li:nth-child(1) span.step__label {
 ul.steps li:nth-child(2) span.step__label {
 	color: #f79647 !important;
 	font-weight: 900;
+	position: absolute;
+	top: -65px;
 }
 ul.steps li:nth-child(3) span.step__label {
 	color: #f79647 !important;
 	font-weight: 900;
+	position: absolute;
+	top: -40px;
 }
 ul.steps li:nth-child(4) span.step__label {
 	color: #474747 !important;
@@ -157,7 +161,7 @@ ul.steps li:nth-child(5) span.step__label {
 	color: #fcd5b6;
 	font-size: 40px;
 	position: absolute;
-	top: -13px;
+	top: -14px;
 	right: 0;
 }
 .step--complete .arrow-right:before {
