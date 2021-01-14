@@ -134,13 +134,11 @@ ul.steps li:nth-child(2) span.step__label {
 	color: #f79647 !important;
 	font-weight: 900;
 	position: absolute;
-	top: -65px;
 }
 ul.steps li:nth-child(3) span.step__label {
 	color: #f79647 !important;
 	font-weight: 900;
 	position: absolute;
-	top: -40px;
 }
 ul.steps li:nth-child(4) span.step__label {
 	color: #474747 !important;
@@ -211,9 +209,48 @@ ul.steps li:nth-child(5) span.step__label {
 	transition-delay: 0.5s;
 }
 
+@media (min-width: 320px) {
+	.step__label {
+		font-size: 0.8rem;
+	}
+	ul.steps li:nth-child(2) span.step__label {
+		top: -80px;
+	}
+	ul.steps li:nth-child(3) span.step__label {
+		top: -60px;
+	}
+}
 @media (min-width: 576px) {
 	.step__label {
 		font-size: 0.8rem;
+	}
+	ul.steps li:nth-child(2) span.step__label {
+		top: -75px;
+	}
+	ul.steps li:nth-child(3) span.step__label {
+		top: -55px;
+	}
+}
+@media (min-width: 768px) {
+	.step__label {
+		font-size: 1rem !important;
+	}
+	ul.steps li:nth-child(2) span.step__label {
+		top: -83px;
+	}
+	ul.steps li:nth-child(3) span.step__label {
+		top: -40px;
+	}
+}
+@media (min-width: 930px) {
+	.step__label {
+		font-size: 1rem !important;
+	}
+	ul.steps li:nth-child(2) span.step__label {
+		top: -63px;
+	}
+	ul.steps li:nth-child(3) span.step__label {
+		top: -40px;
 	}
 }
 
