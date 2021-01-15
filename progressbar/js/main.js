@@ -17,7 +17,7 @@ $("#steps").on("click", ".step--complete", function () {
 $(function () {
 	var lis = $(".steps > li"),
 		currentHighlight = -1;
-	N = 1; //interval in seconds
+	N = 0.5; //interval in seconds
 	let animate = setInterval(function () {
 		currentHighlight = (currentHighlight + 1) % lis.length;
 		console.log(currentHighlight);
