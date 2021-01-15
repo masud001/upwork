@@ -37,7 +37,6 @@ body {
 }
 
 /* Component Styles - Steps */
-
 .steps {
 	display: flex;
 	width: 100%;
@@ -127,7 +126,7 @@ body {
 	color: #fff;
 	box-shadow: 0px 0px 0px 10px #fcd5b6;
 }
-ul.steps li:nth-child(1).step--complete:not(.step-one) .step__icon,
+ul.steps li:nth-child(1).step--complete .step__icon,
 ul.steps li:nth-child(4).step--complete .step__icon {
 	width: 10px;
 	height: 10px;
@@ -223,25 +222,6 @@ ul.steps li:nth-child(5) span.step__label {
 .step--active .progress-end::after {
 	background: #f79647;
 	transition-delay: 0.5s;
-}
-
-/* design 2 */
-.step__label_name {
-	color: #f79647 !important;
-	font-weight: 900;
-	position: absolute;
-	text-align: center;
-	top: -70px;
-}
-.step__label_name > p {
-	margin: 0;
-	font-weight: 900;
-}
-.years_label {
-	position: absolute;
-	text-align: center;
-	bottom: -44px;
-	font-weight: 900;
 }
 
 @media (min-width: 320px) {
