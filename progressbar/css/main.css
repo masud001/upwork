@@ -175,8 +175,9 @@ ul.steps li:nth-child(5) span.step__label {
 	color: #fcd5b6;
 	font-size: 40px;
 	position: absolute;
-	top: -14px;
+	top: -50%;
 	right: 0;
+	transform: translate(0%, 0%);
 }
 .step--complete .arrow-right:before {
 	color: #f79647;
@@ -279,7 +280,7 @@ ul.steps li:nth-child(5) span.step__label {
 }
 @media (min-width: 930px) {
 	.step__label {
-		font-size: 1rem !important;
+		font-size: 12px !important;
 	}
 	ul.steps li:nth-child(2) span.step__label {
 		top: -63px;
