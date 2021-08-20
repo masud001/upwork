@@ -28,7 +28,7 @@ html {
 	display: flex;
 	width: 100%;
 	margin: 0;
-	padding: 0 0 2rem 0;
+	padding: 5rem 0 4rem 0;
 	list-style: none;
 }
 
@@ -131,16 +131,20 @@ ul.steps li:nth-child(5).step--complete .step__icon {
 ul.steps li:nth-child(1) span.step__label {
 	color: #484848 !important;
 	font-weight: 900;
+	position: absolute;
+	width: 100%;
 }
 ul.steps li:nth-child(2) span.step__label {
 	color: #f79647 !important;
 	font-weight: 900;
 	position: absolute;
+	width: 100%;
 }
 ul.steps li:nth-child(3) span.step__label {
 	color: #f79647 !important;
 	font-weight: 900;
 	position: absolute;
+	width: 100%;
 }
 ul.steps li:nth-child(4) span.step__label {
 	color: #474747 !important;
@@ -219,6 +223,7 @@ ul.steps li:nth-child(5) span.step__label {
 	position: absolute;
 	text-align: center;
 	top: -70px;
+	width: 100%;
 }
 .step__label_name > p {
 	margin: 0;
@@ -230,7 +235,9 @@ ul.steps li:nth-child(5) span.step__label {
 	bottom: -44px;
 	font-weight: 900;
 }
-
+.years_label.margin_top {
+	bottom: -80px;
+}
 @media (min-width: 320px) {
 	.step__label {
 		font-size: 0.8rem;
@@ -266,13 +273,14 @@ ul.steps li:nth-child(5) span.step__label {
 }
 @media (min-width: 930px) {
 	.step__label {
-		font-size: 10px !important;
+		font-size: 18px !important;
+		font-weight: 700 !important;
 	}
 	ul.steps li:nth-child(2) span.step__label {
-		top: -63px;
+		top: -85px;
 	}
 	ul.steps li:nth-child(3) span.step__label {
-		top: -40px;
+		top: -56px;
 	}
 }
 

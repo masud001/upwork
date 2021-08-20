@@ -22,8 +22,21 @@ html {
 	font-size: 16px;
 }
 
-/* Component Styles - Steps */
+html,
+body {
+	height: 100%;
+}
 
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	color: #474747;
+	font-family: "Montserrat", sans-serif;
+}
+
+/* Component Styles - Steps */
 .steps {
 	display: flex;
 	width: 100%;
@@ -94,6 +107,13 @@ html {
 	border-color: #f79647;
 	transition-delay: 0.5s;
 }
+.step--complete .step__icon {
+	animation: bounce 0.5s ease-in-out;
+	background-color: #f79647;
+	border-color: #f79647;
+	color: #fff;
+	box-shadow: 0px 0px 0px 10px #fcd5b6;
+}
 
 .step__label {
 	position: absolute;
@@ -106,28 +126,6 @@ html {
 	transform: translateX(-50%);
 	color: #474747;
 }
-.step--complete .step__icon {
-	animation: bounce 0.5s ease-in-out;
-	background-color: #f79647;
-	border-color: #f79647;
-	color: #fff;
-	box-shadow: 0px 0px 0px 10px #fcd5b6;
-}
-ul.steps li:nth-child(1).step--complete:not(.step-one) .step__icon,
-ul.steps li:nth-child(4).step--complete .step__icon {
-	width: 10px;
-	height: 10px;
-	background-color: #f79647ed !important;
-	box-shadow: 0px 0px 0px 10px #fcd5b6c4 !important;
-}
-ul.steps li:nth-child(5).step--complete .step__icon {
-	width: 7px;
-	height: 7px;
-	background-color: #f6cdac !important;
-	border-color: #f6cdac !important;
-	box-shadow: 0px 0px 0px 7px #fdeada !important;
-}
-
 ul.steps li:nth-child(1) span.step__label {
 	color: #484848 !important;
 	font-weight: 900;
@@ -161,9 +159,8 @@ ul.steps li:nth-child(5) span.step__label {
 	color: #fcd5b6;
 	font-size: 40px;
 	position: absolute;
-	top: -50%;
+	top: -14px;
 	right: 0;
-	transform: translate(0%, -20%);
 }
 .step--complete .arrow-right:before {
 	color: #f79647;
@@ -212,25 +209,6 @@ ul.steps li:nth-child(5) span.step__label {
 	transition-delay: 0.5s;
 }
 
-/* design 2 */
-.step__label_name {
-	color: #f79647 !important;
-	font-weight: 900;
-	position: absolute;
-	text-align: center;
-	top: -70px;
-}
-.step__label_name > p {
-	margin: 0;
-	font-weight: 900;
-}
-.years_label {
-	position: absolute;
-	text-align: center;
-	bottom: -44px;
-	font-weight: 900;
-}
-
 @media (min-width: 320px) {
 	.step__label {
 		font-size: 0.8rem;
@@ -266,7 +244,7 @@ ul.steps li:nth-child(5) span.step__label {
 }
 @media (min-width: 930px) {
 	.step__label {
-		font-size: 10px !important;
+		font-size: 1rem !important;
 	}
 	ul.steps li:nth-child(2) span.step__label {
 		top: -63px;

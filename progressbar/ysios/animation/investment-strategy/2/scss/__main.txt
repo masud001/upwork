@@ -1,0 +1,223 @@
+/* Mixins */
+@mixin flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Color Variables */
+$charcoal: #fff;
+$orange-light: #fcd5b6;
+$orange: #f79647;
+$dark: #474747;
+
+/* Theme Variables */
+$base-background-color: $charcoal;
+$base-font-color: $dark;
+$base-muted-color: $orange-light;
+
+/* Animations */
+@keyframes bounce {
+	0% {
+		transform: scale(1);
+	}
+
+	33% {
+		transform: scale(0.9);
+	}
+
+	66% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+/* Base Styles */
+html {
+	font-size: 16px;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	@include flex-center;
+	background-color: $base-background-color;
+	color: $base-font-color;
+	font-family: "Montserrat", sans-serif;
+}
+
+/* Component Styles - Steps */
+.steps {
+	display: flex;
+	width: 100%;
+	margin: 0;
+	padding: 0 0 2rem 0;
+	list-style: none;
+}
+
+.step {
+	@include flex-center;
+	flex-direction: column;
+	flex: 1;
+	position: relative;
+	pointer-events: none;
+
+	&--active,
+	&--complete {
+		cursor: pointer;
+		pointer-events: all;
+	}
+
+	&:not(:last-child) {
+		&:before,
+		&:after {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			height: 0.15rem;
+			content: "";
+			transform: translateY(-50%);
+			will-change: width;
+			z-index: -1;
+		}
+	}
+
+	&:before {
+		width: 100%;
+		background-color: $base-muted-color;
+	}
+
+	&:after {
+		width: 0;
+		background-color: $orange;
+	}
+
+	&--complete {
+		&:after {
+			width: 100% !important;
+			opacity: 1;
+			transition: width 0.6s ease-in-out, opacity 0.6s ease-in-out;
+		}
+	}
+}
+
+.step__icon {
+	@include flex-center;
+	position: relative;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-color: $base-muted-color;
+	border: 0.15rem solid $base-muted-color;
+	border-radius: 50%;
+	color: transparent;
+	font-size: 2rem;
+
+	.step--complete.step--active & {
+		color: #fff;
+		transition: background-color 0.3s ease-in-out,
+			border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+	}
+
+	.step--incomplete.step--active & {
+		border-color: $orange;
+		transition-delay: 0.5s;
+	}
+
+	.step--complete & {
+		animation: bounce 0.5s ease-in-out;
+		background-color: $orange;
+		border-color: $orange;
+		color: #fff;
+		box-shadow: 0px 0px 0px 10px $orange-light;
+	}
+}
+
+.step__label {
+	position: absolute;
+	bottom: -2rem;
+	left: 50%;
+	top: 3rem;
+	font-size: 0.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	transform: translateX(-50%);
+	color: $dark;
+
+	.step--active & {
+		transition: color 0.3s ease-in-out;
+		transition-delay: 0.5s;
+	}
+}
+
+.arrow-right {
+	&:before {
+		display: block;
+		content: "\203A";
+		color: $base-muted-color;
+		font-size: 40px;
+		position: absolute;
+		top: -13px;
+		right: 0;
+		.step--complete & {
+			color: $orange;
+			transition-delay: 0.25s;
+		}
+	}
+}
+.progress-start {
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 0;
+		height: 0.15rem;
+		width: 24%;
+		transform: translate(100%, -50%);
+		z-index: -1;
+	}
+	&::before {
+		background: $orange-light;
+	}
+	&::after {
+		width: 10%;
+		background: $orange;
+		transform: translate(360%, -50%);
+	}
+}
+.progress-end {
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		height: 0.15rem;
+		width: 24%;
+		transform: translate(0%, -50%);
+		z-index: -1;
+	}
+	&::before {
+		background: $orange-light;
+	}
+	&::after {
+		width: 10%;
+		.step--active & {
+			background: $orange;
+			transition-delay: 0.5s;
+		}
+		transform: translate(50%, -50%);
+	}
+}
+
+@media (min-width: 576px) {
+	.step__label {
+		font-size: 0.8rem;
+	}
+}
